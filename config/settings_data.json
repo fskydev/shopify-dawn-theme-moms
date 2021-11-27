@@ -6,9 +6,15 @@
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#FFFFFF",
-    "colors_background_2": "#F3F3F3",
+    "colors_background_2": "#f4eae6",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
+    "sale_badge_color_scheme": "accent-1",
+    "sold_out_badge_color_scheme": "inverse",
+    "page_width": "1600",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_pinterest_link": "",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -16,7 +22,9 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "color_scheme": "background-1"
+              "text": "Welcome to our store",
+              "color_scheme": "background-1",
+              "link": ""
             }
           }
         },
@@ -25,8 +33,54 @@
         ],
         "settings": {
         }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo_width": 100,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": false,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-1": {
+            "type": "text",
+            "settings": {
+              "heading": "Let’s do this together",
+              "subtext": "<p>Sign up for our newsletter for fun community surprises!<\/p>"
+            }
+          },
+          "eb3104f0-5a79-4d64-b783-b34324827648": {
+            "type": "text",
+            "settings": {
+              "heading": "FDA Disclosure",
+              "subtext": "<p>These statements have not been evaluated by the FDA and are not intended to diagnose, cure, mitigate, treat, or prevent any disease. If you are considering making any changes to your lifestyle, diet or nutrition, or skin care regimen you should first consult your doctor or healthcare provider. Our products should be used only as directed on the label. If you are pregnant, nursing, taking medication, or have a medical condition, we suggest consulting with your physician before using any of our products.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-1",
+          "eb3104f0-5a79-4d64-b783-b34324827648"
+        ],
+        "settings": {
+          "color_scheme": "background-2",
+          "newsletter_enable": true,
+          "newsletter_heading": "",
+          "show_social": true,
+          "enable_country_selector": true,
+          "enable_language_selector": false,
+          "payment_enable": false
+        }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {

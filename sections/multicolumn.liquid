@@ -1,13 +1,18 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn {% if section.settings.custom_class %}{{ section.settings.custom_class }}{% endif %} background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
         {{ section.settings.title | escape }}
       </h2>
+
+      {%- if section.settings.description != blank -%}
+        <div class="description">{{ section.settings.description }}</div>
+      {%- endif -%}
       {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
         <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
       {%- endif -%}
@@ -56,9 +61,23 @@
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
+                
                 {%- if block.settings.title != blank -%}
                   <h3>{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
+
+                {% if section.settings.custom_class == "home-testimonials" %}  
+                  <div class="stars-wrapper">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                {% endif %}
+
+                
+
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
@@ -105,6 +124,11 @@
       "id": "title",
       "default": "Multicolumn",
       "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.multicolumn.blocks.column.settings.text.label"
     },
     {
       "type": "select",
@@ -202,6 +226,11 @@
       "id": "swipe_on_mobile",
       "default": false,
       "label": "t:sections.multicolumn.settings.swipe_on_mobile.label"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Class"
     }
   ],
   "blocks": [

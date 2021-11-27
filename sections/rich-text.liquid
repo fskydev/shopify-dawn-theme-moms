@@ -5,7 +5,12 @@
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="{% unless section.settings.full_width %}page-width{% endunless %}">
-  <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
+  <div class="rich-text {% if section.settings.custom_class %}{{ section.settings.custom_class }}{% endif %} color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
+    {% if section.settings.custom_class == "read-our-story" %}
+    <div class="bg-ellipse-1"></div>
+    <div class="bg-ellipse-2"></div>
+    <div class="bg-ellipse-3"></div>
+    {% endif %}
     <div class="rich-text__blocks">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -20,6 +25,7 @@
         {%- endcase -%}
       {%- endfor -%}
     </div>
+   
   </div>
 </div>
 
@@ -62,6 +68,11 @@
       "id": "full_width",
       "default": true,
       "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Class"
     }
   ],
   "blocks": [

@@ -1872,9 +1872,9 @@ input[type='checkbox'] {
     padding-bottom: 2rem;
   }
 
-  .header--has-menu:not(.header--middle-left) {
+  /* .header--has-menu:not(.header--middle-left) {
     padding-bottom: 0;
-  }
+  } */
 
   .header--top-left,
   .header--middle-left:not(.header--has-menu) {
@@ -1896,9 +1896,9 @@ input[type='checkbox'] {
       'navigation navigation navigation';
   }
 
-  .header:not(.header--middle-left) .header__inline-menu {
+  /* .header:not(.header--middle-left) .header__inline-menu {
     margin-top: 1.05rem;
-  }
+  } */
 }
 
 .header *[tabindex='-1']:focus {

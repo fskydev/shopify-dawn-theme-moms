@@ -1,0 +1,684 @@
+@font-face {
+    font-family: 'Glacial Indifference Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('GlacialIndifference-Regular.woff') format('woff');
+}   
+
+@font-face {
+    font-family: 'Glacial Indifference Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('GlacialIndifference-Bold.woff') format('woff');
+}
+
+.announcement-bar__message {
+    font-family: 'Glacial Indifference Regular';
+    font-weight: 500;
+}
+
+/* header */
+
+.header__heading .header__heading-link {
+    display: flex;
+    align-items: center;
+    column-gap: 0.2rem;
+}
+
+.header__heading-link .abbr {
+    font-weight: normal;
+    font-family: 'Glacial Indifference Regular';
+}
+
+/* footer */
+
+.footer .footer__content-top {
+    padding-top: 6rem;
+}
+
+.footer .footer__content-top .footer-block:first-child .footer-block__heading {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 59px;
+    /* identical to box height */
+
+    color: #011E42;
+}
+
+.footer .footer__content-top .footer-block:first-child .footer-block__details-content {
+    font-family: 'Glacial Indifference Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #011E42;
+}
+
+.footer .footer__content-top .footer-block:nth-child(1) .footer-block__details-content {
+    max-width: 100%;
+}
+
+.footer .footer__content-top .footer-block:nth-child(2) .footer-block__heading,
+.footer .footer__content-top .footer-block:nth-child(2) .footer-block__details-content {
+    font-family: 'Glacial Indifference Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #011E42;    
+}
+
+.footer-block--newsletter {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 43rem;
+    width: 100%;
+}
+
+.footer-block__newsletter {
+    width: 100%;
+}
+
+.newsletter-form  {
+    max-width: unset;
+}
+
+.footer-block--newsletter .newsletter-form__field-wrapper {
+    /* background-color: red; */
+    max-width: unset;
+}
+
+.footer-block--newsletter .newsletter-form__field-wrapper #NewsletterForm--footer {
+    box-shadow: unset;
+    border-bottom: solid 2px #000;
+    flex: 8;
+    font-family: 'Glacial Indifference Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #011E42;
+    padding: 10px 0px;
+}
+
+.footer-block--newsletter .newsletter-form__field-wrapper #NewsletterForm--footer::placeholder {
+    opacity: 1;
+}
+
+.footer-block--newsletter .newsletter-form__field-wrapper .newsletter-form__button {
+    position: relative;
+    flex: 2;
+    padding: 15px 30px;
+    background-color: #011E42;
+    color: white;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+
+.footer-block--newsletter .newsletter-form__field-wrapper .newsletter-form__button span {
+    font-family: 'Glacial Indifference Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer-block--newsletter .footer__list-social {
+    column-gap: 12px;
+    margin-top: 65px;
+}
+
+.footer .footer__content-top .list-social__item .list-social__link svg{
+    display: none;
+}
+
+.footer .footer__content-top .list-social__item:nth-child(1) .list-social__link {
+    background: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-faceboo-circular.png?v=1637349170);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+.footer .footer__content-top .list-social__item:nth-child(2) .list-social__link {
+    background: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-instagram-circular.png?v=1637349170);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+/* homepage */
+
+.image-with-text.top-banner {
+    margin-bottom: 0px;
+}
+
+.image-with-text__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    color: #011E42;
+}
+
+.image-with-text__text p {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #011E42;
+}
+
+.image-with-text__content .image-with-text__text+.button {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #011E42;
+    border: 2px solid #011E42;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: unset;
+}
+
+.rich-text.read-our-story {
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 85px;
+    position: relative;
+}
+
+.rich-text.read-our-story .rich-text__blocks {
+    position: relative;
+}
+
+.rich-text__blocks .rich-text__text p {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #011E42;
+}
+
+.rich-text__blocks .rich-text__text+.button {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;    
+    color: #011E42;
+    border: 2px solid #011E42;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: unset;
+}
+
+.rich-text.read-our-story .bg-ellipse-1 {
+    position: absolute;
+    background-color: #D2D1EC;
+    width: 400px;
+    height: 400px;
+    top: -200px;
+    right: -100px;
+    border-radius: 50%;
+    display: inline;
+}
+
+.rich-text.read-our-story .bg-ellipse-2 {
+    position: absolute;
+    background-color: #F9D493;
+    width: 400px;
+    height: 400px;
+    bottom: -85px;
+    left: -200px;
+    border-radius: 50%;
+    display: inline;
+}
+
+.rich-text.read-our-story .bg-ellipse-3 {
+    position: absolute;
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+    bottom: -40px;
+    left: -20px;
+    border-radius: 50%;
+    display: inline;
+    background-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/image_section_read_our_story.png?v=1637272404);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 0;    
+}
+
+.multicolumn.selling-products{
+    background-color: #FEF3EF;
+}
+
+.multicolumn.selling-products .title-wrapper-with-link {
+    flex-direction: column;
+}
+
+.multicolumn.selling-products .title {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #011E42;
+}
+
+.multicolumn.selling-products .description p {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;    
+    color: #011E42;
+}
+
+.multicolumn.selling-products .multicolumn-card {
+    background-color: unset;
+}
+
+.multicolumn.selling-products .multicolumn-card .multicolumn-card__image-wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+.multicolumn.selling-products .multicolumn-card .media {
+    overflow: visible;
+}
+
+.multicolumn.selling-products .multicolumn-card img {
+    margin-left: -25%;
+}
+
+.multicolumn.selling-products .multicolumn-card .multicolumn-card__info {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.multicolumn.selling-products .multicolumn-card .multicolumn-card__info h3 {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    color: #011E42;
+}
+
+.multicolumn.selling-products .multicolumn-card .multicolumn-card__info .rte {
+    margin-top: 15px;
+}
+
+.multicolumn.selling-products .multicolumn-card .multicolumn-card__info p {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #011E42;
+}
+
+.multicolumn.selling-products .multicolumn-card .multicolumn-card__info .link {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    background: #011E42;
+    padding: 10px 30px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.multicolumn.selling-products .multicolumn-card .multicolumn-card__info .link .icon-wrap {
+    display: none;
+}
+
+.image-with-text.whats-cbd .image-with-text__content {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.image-with-text.whats-cbd .image-with-text__content .image-with-text__text p {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.image-with-text.whats-cbd .image-with-text__content .image-with-text__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 59px;
+    text-align: right;
+    color: #011E42;
+}
+
+.image-with-text.whats-cbd .image-with-text__content .image-with-text__text p {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: right;
+    color: #011E42;
+}
+
+.image-with-text.whats-cbd .image-with-text__content .image-with-text__text p strong {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: right;
+    color: #011E42;
+}
+
+.image-with-text.whats-cbd .image-with-text__media {
+    padding-bottom: unset;
+}
+
+.image-with-text.whats-cbd .image-with-text__media img {
+    width: 100%;
+    height: auto;
+    -webkit-mask-box-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/overlay_section_whats_cbd.png?v=1637327766);
+}
+
+.why-best-wrapper {
+    background-color: #FEF3EF;
+}
+.image-with-text.why-best {
+    margin-bottom: 0;
+}
+
+.image-with-text.why-best .image-with-text__grid {
+    background-color: unset;
+}
+
+.image-with-text.why-best .image-with-text__media img {
+    width: auto;
+    height: 80%;
+    
+    -webkit-mask-box-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/overlay_section_why_best.png?v=1637328223);
+}
+
+.image-with-text.why-best .image-with-text__content .image-with-text__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 44px;
+    color: #011E42;
+    margin-bottom: 20px;
+}
+
+.image-with-text.why-best .image-with-text__content .image-with-text__text {
+    padding-left: 100px;
+}
+
+.image-with-text.why-best .image-with-text__content .image-with-text__text p {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #011E42;
+    position: relative;
+}
+
+.image-with-text.why-best .image-with-text__content .image-with-text__text p strong {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+    color: #011E42;
+    margin-top: 10px;
+}
+
+.image-with-text.why-best .image-with-text__content .image-with-text__text p:nth-child(1)::before {
+    content: '';
+    background-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-organically-produced.png?v=1637332802);
+    position: absolute;
+    top: 10px;
+    left: -92px;
+    width: 64px;
+    height: 64px;
+}
+
+.image-with-text.why-best .image-with-text__content .image-with-text__text p:nth-child(3)::before {
+    content: '';
+    background-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-third-party-verified.png?v=1637332803);
+    position: absolute;
+    top: 10px;
+    left: -92px;
+    width: 64px;
+    height: 64px;
+}
+
+.image-with-text.why-best .image-with-text__content .image-with-text__text p:nth-child(5)::before {
+    content: '';
+    background-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-shipped.png?v=1637332802);
+    position: absolute;
+    top: 10px;
+    left: -92px;
+    width: 64px;
+    height: 64px;
+}
+
+.multicolumn.home-testimonials {
+    background-color: #011E42;
+    margin: 0 !important;
+    padding: 50px 20px 30px;
+    color: #fff;
+}
+
+.multicolumn.home-testimonials .title-wrapper-with-link {
+    display: none;
+}
+
+.multicolumn.home-testimonials .multicolumn-list {
+    margin-top: 0;
+}
+
+.multicolumn.home-testimonials .multicolumn-card__info {
+    max-width: 300px;
+    margin: auto;
+    padding-bottom: 0;
+}
+
+.multicolumn.home-testimonials .multicolumn-card__info p {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.multicolumn.home-testimonials .link {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    cursor: none;
+    pointer-events: none;
+}
+
+.multicolumn.home-testimonials .link .icon-wrap {
+    display: none;
+}
+
+.image-with-text.oregon-banner .image-with-text__heading {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 50px;
+    color: #011E42;
+    padding-bottom: 10px;
+}
+
+.image-with-text.oregon-banner .image-with-text__text {
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #011E42;
+}
+
+.image-with-text.oregon-banner .image-with-text__content .button {
+    background: #011E42;
+    color: white;
+    margin-top: 40px;
+}
+
+
+
+@media screen and (min-width: 990px) {
+
+    .header--middle-right {
+        grid-template-areas: 'heading navigation icons';
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .header--middle-right .header__inline-menu {
+        margin-left: 0;
+        margin-top: 0;
+        text-align: right;
+    }
+
+    .header--has-menu:not(.header--middle-left):not(.header--middle-right) {
+        padding-bottom: 0;
+    }
+
+    .header:not(.header--middle-left):not(.header--middle-right) .header__inline-menu {
+        margin-top: 1.05rem;
+    }
+
+    .image-with-text.top-banner {
+        margin-top: -92px;
+    }
+
+    .no-background {
+        background: unset;
+    }
+
+    .no-background .header__heading-link span {
+        color: #fff;
+    }
+
+    .header__menu-item,
+    .header__icon.header__icon--account,
+    .header__icon.header__icon--cart {
+        display: inline-table;
+        color: #011E42;
+        font-family: 'Glacial Indifference Regular', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        padding-left: 35px;
+        padding-right: 35px;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .header__icon.header__icon--account:hover,
+    .header__icon.header__icon--cart:hover {
+        text-decoration: underline;
+    }
+
+    .multicolumn.selling-products .description p {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .footer .footer__content-top .footer-block:nth-child(1) .footer-block__details-content {
+        max-width: 70%;
+    }
+
+    .footer-block--newsletter {
+        margin-top: -60px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .image-with-text.whats-cbd .image-with-text__media {
+        padding-bottom: unset;
+    }
+
+    .image-with-text.whats-cbd .image-with-text__media img {
+        width: 80%;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+
+    .image-with-text.why-best .image-with-text__media {
+        padding-bottom: unset;
+    }
+
+    .image-with-text.why-best .image-with-text__media img {
+        height: 80%;
+        width: auto;
+        max-width: 80%;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+
+    .image-with-text.oregon-banner .image-with-text__media img {
+        max-width: 460px;
+        height: auto;
+        right: 10%;
+        left: unset;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@media screen and (max-width: 749px) {
+    .image-with-text.why-best .image-with-text__media img {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+    }
+    .multicolumn.home-testimonials .multicolumn-card__info {
+        padding-bottom: 20px;
+    }
+}
+
+

@@ -79,7 +79,12 @@
     <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
   </symbol>
 </svg>
+
+{%- if request.page_type == 'index' -%}
+<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper homepage-header no-background {% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+{%- else -%}
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+{%- endif -%}
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
@@ -341,7 +346,7 @@
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- else -%}
-            <span class="h2">{{ shop.name }}</span>
+            <span class="h2">cbd for moms</span><span class="abbr">co</span>
           {%- endif -%}
         </a>
     {%- if request.page_type == 'index' -%}
@@ -401,7 +406,7 @@
     {%- endif -%}
 
     <div class="header__icons">
-      <details-modal class="header__search">
+      <details-modal class="header__search visually-hidden">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
@@ -476,8 +481,8 @@
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-          {% render 'icon-account' %}
-          <span class="visually-hidden">
+          <!-- {% render 'icon-account' %} -->
+          <span class="">
             {%- liquid
               if customer
                 echo 'customer.account_fallback' | t
@@ -490,22 +495,7 @@
       {%- endif -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        {%- liquid
-          if cart == empty
-            render 'icon-cart-empty'
-          else
-            render 'icon-cart'
-          endif
-        -%}
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-        {%- if cart != empty -%}
-          <div class="cart-count-bubble">
-            {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
-            {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-          </div>
-        {%- endif -%}
+        <span class="">{{ 'templates.cart.cart' | t }}{%- if cart != empty -%}({{ cart.item_count }}){%- endif -%}</span>
       </a>
     </div>
   </header>
@@ -557,7 +547,17 @@
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         requestAnimationFrame(this.hide.bind(this));
       } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+        
         if (!this.preventReveal) {
+          let headerWrapper = this.header.querySelector(".header-wrapper");
+          if(scrollTop > 350){
+            headerWrapper.classList.remove("no-background");
+          }else{
+            if(headerWrapper.classList.contains("homepage-header")){
+              headerWrapper.classList.add("no-background");
+            }            
+          }
+
           requestAnimationFrame(this.reveal.bind(this));
         } else {
           window.clearTimeout(this.isScrolling);
@@ -565,13 +565,12 @@
           this.isScrolling = setTimeout(() => {
             this.preventReveal = false;
           }, 66);
-
+         
           requestAnimationFrame(this.hide.bind(this));
         }
       } else if (scrollTop <= this.headerBounds.top) {
         requestAnimationFrame(this.reset.bind(this));
       }
-
 
       this.currentScrollTop = scrollTop;
     }
@@ -700,6 +699,10 @@
         {
           "value": "middle-left",
           "label": "t:sections.header.settings.logo_position.options__1.label"
+        },
+        {
+          "value": "middle-right",
+          "label": "t:sections.header.settings.logo_position.options__4.label"
         },
         {
           "value": "top-left",
