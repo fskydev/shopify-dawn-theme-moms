@@ -37,11 +37,11 @@ class CartItems extends HTMLElement {
         section: document.getElementById('main-cart-items').dataset.id,
         selector: '.js-contents',
       },
-      {
-        id: 'cart-icon-bubble',
-        section: 'cart-icon-bubble',
-        selector: '.shopify-section'
-      },
+      // {
+      //   id: 'cart-icon-bubble',
+      //   section: 'cart-icon-bubble',
+      //   selector: '.shopify-section'
+      // },
       {
         id: 'cart-live-region-text',
         section: 'cart-live-region-text',
@@ -88,6 +88,14 @@ class CartItems extends HTMLElement {
         const lineItem =  document.getElementById(`CartItem-${line}`);
         if (lineItem && lineItem.querySelector(`[name="${name}"]`)) lineItem.querySelector(`[name="${name}"]`).focus();
         this.disableLoading();
+
+        //update cart count
+        fetch('/cart.js')
+        .then(response => response.json())
+        .then(data => { 
+          let itemCount = data.item_count;          
+          document.getElementById("cart-icon-bubble").querySelector('.cart-count').innerText = itemCount;          
+        });
       }).catch(() => {
         this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));
         document.getElementById('cart-errors').textContent = window.cartStrings.error;

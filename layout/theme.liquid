@@ -172,7 +172,10 @@
     {%- endif -%}
 
     {%- if request.page_type == 'index' -%}
-    {{ 'custom.js' | asset_url | script_tag }}
+      {{ 'custom-homepage.js' | asset_url | script_tag }}
+    {%- endif -%}
+    {%- if request.page_type == 'product' -%}
+      {{ 'custom-product.js' | asset_url | script_tag }}
     {%- endif -%}
   </body>
 </html>

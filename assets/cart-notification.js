@@ -32,6 +32,7 @@ class CartNotification extends HTMLElement {
   }
 
   renderContents(parsedState) {
+      console.log(" -------- renderContents =>", parsedState);
       this.productId = parsedState.id;
       this.getSectionsToRender().forEach((section => {
         document.getElementById(section.id).innerHTML =
@@ -40,6 +41,15 @@ class CartNotification extends HTMLElement {
 
       if (this.header) this.header.reveal();
       this.open();
+
+      //update cart count
+      fetch('/cart.js')
+        .then(response => response.json())
+        .then(data => { 
+          let itemCount = data.item_count;          
+          // document.getElementById("cart-icon-bubble").querySelector('.cart-count').innerText = itemCount;
+          document.getElementById("cart-icon-bubble").innerHTML = "<span>" + "Cart(" + "<span class='cart-count'>" + itemCount + "</span>" + ")" + "</span>";
+        });
   }
 
   getSectionsToRender() {
@@ -51,9 +61,9 @@ class CartNotification extends HTMLElement {
       {
         id: 'cart-notification-button'
       },
-      {
-        id: 'cart-icon-bubble'
-      }
+      // {
+      //   id: 'cart-icon-bubble'
+      // }
     ];
   }
 

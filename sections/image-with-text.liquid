@@ -1,8 +1,13 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
-{% if section.settings.custom_class == "why-best" %}  
+{% if section.settings.custom_class == "why-best" or section.settings.custom_class == "oregon-banner" %}  
 <div class="{{ section.settings.custom_class }}-wrapper">
 {% endif %}
   <div class="image-with-text {% if section.settings.custom_class %}{{ section.settings.custom_class }}{% endif %} {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+    {% if section.settings.custom_class == "product-details" %}  
+    <h2 class="image-with-text__heading h1">
+      {{ section.blocks[0].settings.heading | escape }}
+    </h2>
+    {% endif %}
     <div class="image-with-text__grid color-{{ section.settings.color_scheme }} grid grid--gapless grid--1-col grid--2-col-tablet gradient{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
       <div class="grid__item">
         <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
@@ -34,14 +39,16 @@
           {%- for block in section.blocks -%}
             {% case block.type %}
               {%- when 'heading' -%}
+                {% if section.settings.custom_class != "product-details" %}  
                 <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
                   {{ block.settings.heading | escape }}
                 </h2>
+                {% endif %}
               {%- when 'text' -%}
                 <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
               {%- when 'button' -%}
                 {%- if block.settings.button_label != blank -%}
-                  <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+                  <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button {% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }} data-pdf-url="{{ product.metafields.my_fields.supplement_facts_pdf.value.url  }}">
                     {{ block.settings.button_label | escape }}
                   </a>
                 {%- endif -%}
@@ -51,7 +58,15 @@
       </div>
     </div>
   </div>
-{% if section.settings.custom_class == "why-best" %}  
+
+  {% if section.settings.custom_class == "product-details" %}  
+    <div class="page-width ">
+      <hr class="product-details"/>
+    </div>
+    
+  {% endif %}
+
+  {% if section.settings.custom_class == "why-best" or section.settings.custom_class == "oregon-banner" %}  
 </div>
 {% endif %}
 {% schema %}

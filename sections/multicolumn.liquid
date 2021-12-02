@@ -103,6 +103,14 @@
         </div>
       {%- endif -%}
     </slider-component>
+
+
+    {% if section.settings.custom_class == "how-to-use" %}  
+      {%- if section.settings.description != blank -%}
+        <div class="description">{{ section.settings.description }}</div>
+      {%- endif -%}
+    {%- endif -%}
+
     <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a class="button button--primary"{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %}>

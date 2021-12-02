@@ -19,15 +19,54 @@
 
 /* header */
 
-.header__heading .header__heading-link {
+/* .header__heading  */
+sticky-header.header-wrapper {
+    box-shadow: 0 10px 5px -5px #ede3dc;
+}
+sticky-header.header-wrapper.no-background {
+    box-shadow: unset;
+}
+.header__heading-link {
     display: flex;
     align-items: center;
     column-gap: 0.2rem;
 }
 
+.no-background .header__heading-link:hover span {
+    color: #fff;
+}
+
+.header__heading-link span.h2 {
+    font-weight: bold;
+}
+
 .header__heading-link .abbr {
     font-weight: normal;
     font-family: 'Glacial Indifference Regular';
+}
+
+.no-background .header__heading {
+    pointer-events: unset;
+}
+
+.header__menu-item,
+.header__icon.header__icon--account,
+.header__icon.header__icon--cart {
+    display: inline-table;
+    color: #011E42;
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header__icon.header__icon--account:hover,
+.header__icon.header__icon--cart:hover {
+    text-decoration: underline;
 }
 
 /* footer */
@@ -267,7 +306,7 @@
     border-bottom-left-radius: 0;    
 }
 
-.multicolumn.selling-products{
+.multicolumn.selling-products {
     background-color: #FEF3EF;
 }
 
@@ -596,6 +635,10 @@
         background: unset;
     }
 
+    .header__heading-link span:first-child {
+        font-size: 30px;
+    }
+  
     .no-background .header__heading-link span {
         color: #fff;
     }
@@ -661,6 +704,15 @@
         transform: translateY(-50%);
     }
 
+    .image-with-text.oregon-banner {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    .image-with-text.oregon-banner .image-with-text__media {
+        padding-bottom: unset !important;
+    }
+
     .image-with-text.oregon-banner .image-with-text__media img {
         max-width: 460px;
         height: auto;
@@ -680,5 +732,3 @@
         padding-bottom: 20px;
     }
 }
-
-
