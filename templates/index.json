@@ -29,10 +29,12 @@
         "163720049755c3d76e-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/img_hero.png",
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/img_hero.jpg",
+        "height": "large",
         "color_scheme": "background-2",
-        "layout": "image_first"
+        "layout": "image_first",
+        "full_width": true,
+        "custom_class": "top-banner"
       }
     },
     "rich_text": {
@@ -67,7 +69,8 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true
+        "full_width": true,
+        "custom_class": "read-our-story"
       }
     },
     "16372082505e94469c": {
@@ -86,7 +89,7 @@
         "1637208250599253a3-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img_no_judgement_01.png",
+            "image": "shopify:\/\/shop_images\/img_no_judgement_02.png",
             "title": "No Judgement",
             "text": "<p>Blend of 1000mg CBD, rhodiola and green tea extract for clarity and focus<\/p>",
             "link_label": "Shop now",
@@ -96,7 +99,7 @@
         "1637208250599253a3-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img_no_regrets_01.png",
+            "image": "shopify:\/\/shop_images\/img_no_regrets_02.png",
             "title": "No Regrets",
             "text": "<p>Blend of 1500mg CBD, ashwaganda & shatavari for energy & decision-making<\/p>",
             "link_label": "Shop now",
@@ -111,13 +114,15 @@
       ],
       "settings": {
         "title": "No stress, No judgements, No regrets",
+        "description": "<p>3 types of tinctures to help promote daily calm, mindfullness and empowerement.<\/p>",
         "image_width": "third",
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "secondary",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "custom_class": "selling-products"
       }
     },
     "16372033928c214c01": {
@@ -144,7 +149,9 @@
         "image": "shopify:\/\/shop_images\/img_section_whats_cbd.png",
         "height": "adapt",
         "color_scheme": "background-1",
-        "layout": "text_first"
+        "layout": "text_first",
+        "full_width": false,
+        "custom_class": "whats-cbd"
       }
     },
     "163720341071b040b2": {
@@ -168,10 +175,12 @@
         "1637203410c44c02fb-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/img_section_why_best.png",
+        "image": "shopify:\/\/shop_images\/img_section_why_best.jpg",
         "height": "adapt",
         "color_scheme": "background-2",
-        "layout": "image_first"
+        "layout": "image_first",
+        "full_width": false,
+        "custom_class": "why-best"
       }
     },
     "16372035976be107bb": {
@@ -226,13 +235,15 @@
       ],
       "settings": {
         "title": "",
+        "description": "",
         "image_width": "third",
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": false,
+        "custom_class": "home-testimonials"
       }
     },
     "1637204178577b35c1": {
@@ -267,7 +278,9 @@
         "image": "shopify:\/\/shop_images\/img_section_oregon.png",
         "height": "adapt",
         "color_scheme": "background-1",
-        "layout": "image_first"
+        "layout": "image_first",
+        "full_width": false,
+        "custom_class": "oregon-banner"
       }
     },
     "16372059205cf404cf": {

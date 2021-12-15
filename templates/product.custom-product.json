@@ -11,15 +11,21 @@
         "9cc347a1-99c7-4261-bf2c-bb360b16531a": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
-            "stars_fill_color": "#000000",
-            "star_size": 15,
-            "text_align": "center",
+            "stars_fill_color": "#011e42",
+            "star_size": 25,
+            "text_align": "flex-start",
             "product": "{{product}}",
             "stars_text_empty": "No reviews"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "subtitle": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
@@ -27,11 +33,13 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
           }
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button"
           }
@@ -47,29 +55,31 @@
             "show_dynamic_checkout": false
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "share": {
           "type": "share",
           "disabled": true,
           "settings": {
             "share_label": "Share"
           }
+        },
+        "d66c7678-468d-4731-b39b-04a890ab7719": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span class=\"custom-rating_count visually-hidden\">{{product.metafields.reviews.rating_count}} <\/span>"
+          }
         }
       },
       "block_order": [
         "title",
         "9cc347a1-99c7-4261-bf2c-bb360b16531a",
+        "description",
         "subtitle",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "share",
+        "d66c7678-468d-4731-b39b-04a890ab7719"
       ],
       "settings": {
         "enable_sticky_info": false,
@@ -88,10 +98,186 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "1637602381b2f75762": {
+      "type": "image-with-text",
+      "blocks": {
+        "1637602381837ff101-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made with responsibly sourced herbs and hemp extracts"
+          }
+        },
+        "1637602381837ff101-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.my_fields.details_text | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1637602381837ff101-0",
+        "1637602381837ff101-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.my_fields.details_img.value }}",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "image_first",
+        "full_width": false,
+        "custom_class": "product-details"
+      }
+    },
+    "163760313607af6209": {
+      "type": "multicolumn",
+      "blocks": {
+        "16376031367fe99d4c-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/photo_consult_01.png",
+            "title": "",
+            "text": "<p>Place a 1ml drop under your tongue and hold it in your mouth for 30 seconds before swallowing<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16376031367fe99d4c-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/photo_consult_02.png",
+            "title": "",
+            "text": "<p>Add CBD to your favorite drink, like a smoothie, tea, or even a cocktail.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16376031367fe99d4c-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/photo_consult_03.png",
+            "title": "",
+            "text": "<p>Use the oil as a topical and apply directly to the skin for moisture,<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16376031367fe99d4c-0",
+        "16376031367fe99d4c-1",
+        "16376031367fe99d4c-2"
+      ],
+      "settings": {
+        "title": "How it’s done*",
+        "description": "<p>*Please consult your doctor before purchasing to make sure there are no possible side effects, especially when pregnant or nursing<\/p>",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "custom_class": "how-to-use"
+      }
+    },
+    "16376031407e0b9dd4": {
+      "type": "image-with-text",
+      "blocks": {
+        "16376031401cfa481c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our promise of 100% transparency"
+          }
+        },
+        "16376031401cfa481c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>100% transparent. Even to the point where we’ll send you the picture of the plant your tincture came from.<br\/><br\/>See the third-party test from an independant lab.<\/p>"
+          }
+        },
+        "16376031401cfa481c-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "See the lab report",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "16376031401cfa481c-0",
+        "16376031401cfa481c-1",
+        "16376031401cfa481c-2"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.my_fields.supplement_facts_image.value }}",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "image_first",
+        "full_width": false,
+        "custom_class": "supplements-facts"
+      }
+    },
+    "16377254244909bd01": {
+      "type": "apps",
+      "blocks": {
+        "87718e15-fd42-40b6-8f72-d67f0576448d": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "87718e15-fd42-40b6-8f72-d67f0576448d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1637603237d10f4c1e": {
+      "type": "image-with-text",
+      "blocks": {
+        "1637603237d0126cea-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Grown and produced at the mom-run farm in Oregon"
+          }
+        },
+        "1637603237d0126cea-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Good Manufacturing Practices Certified (GMP), Hemp Authority Certified (HA), USDA Certified Organic, and Kosher Certified - the list goes on.<\/p>"
+          }
+        },
+        "1637603237d0126cea-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn our story",
+            "button_link": "shopify:\/\/pages\/our-story"
+          }
+        }
+      },
+      "block_order": [
+        "1637603237d0126cea-0",
+        "1637603237d0126cea-1",
+        "1637603237d0126cea-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img_section_oregon.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "full_width": false,
+        "custom_class": "oregon-banner"
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1637602381b2f75762",
+    "163760313607af6209",
+    "16376031407e0b9dd4",
+    "16377254244909bd01",
+    "1637603237d10f4c1e"
   ]
 }

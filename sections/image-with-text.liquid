@@ -59,9 +59,9 @@
     </div>
   </div>
 
-  {% if section.settings.custom_class == "product-details" %}  
+  {% if section.settings.custom_class == "product-details" or section.settings.custom_class == "supplements-facts" %}  
     <div class="page-width ">
-      <hr class="product-details"/>
+      <hr class="{{section.settings.custom_class}}"/>
     </div>
     
   {% endif %}

@@ -46,8 +46,7 @@ class CartNotification extends HTMLElement {
       fetch('/cart.js')
         .then(response => response.json())
         .then(data => { 
-          let itemCount = data.item_count;          
-          // document.getElementById("cart-icon-bubble").querySelector('.cart-count').innerText = itemCount;
+          let itemCount = data.item_count;
           document.getElementById("cart-icon-bubble").innerHTML = "<span>" + "Cart(" + "<span class='cart-count'>" + itemCount + "</span>" + ")" + "</span>";
         });
   }

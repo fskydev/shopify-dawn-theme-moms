@@ -7,7 +7,7 @@
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#FFFFFF",
     "colors_background_2": "#f4eae6",
-    "type_header_font": "assistant_n4",
+    "type_header_font": "playfair_display_n7",
     "type_body_font": "assistant_n4",
     "sale_badge_color_scheme": "accent-1",
     "sold_out_badge_color_scheme": "inverse",
@@ -38,8 +38,9 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo_width": 100,
-          "logo_position": "middle-left",
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_width": 250,
+          "logo_position": "middle-right",
           "menu": "main-menu",
           "show_line_separator": false,
           "enable_sticky_header": true
