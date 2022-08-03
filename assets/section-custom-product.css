@@ -569,4 +569,12 @@ hr.supplements-facts {
         margin-top: 0px;
     }
 
+    .image-with-text.product-details {
+        padding-bottom: 10px;
+    }
+
+    .image-with-text.product-details .image-with-text__content {
+        padding-bottom: 20px;
+    }
+
 }

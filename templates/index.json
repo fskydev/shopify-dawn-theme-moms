@@ -81,9 +81,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/img_no_stress_02.png",
             "title": "No Stress",
-            "text": "<p>Blend of 500mg CBD, valeryan root, chamomile tea extract for daily calm<\/p>",
+            "text": "<p>Blend of 500mg CBD, catnip & chamomile tea extract for daily calm<\/p>",
             "link_label": "Shop now",
-            "link": "shopify:\/\/products\/no-stress"
+            "link": "shopify:\/\/products\/no-stress-tincture"
           }
         },
         "1637208250599253a3-1": {
@@ -91,9 +91,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/img_no_judgement_02.png",
             "title": "No Judgement",
-            "text": "<p>Blend of 1000mg CBD, rhodiola and green tea extract for clarity and focus<\/p>",
+            "text": "<p>Blend of 750mg CBD, ashwaganda & lemon balm for mindfulness & focus<\/p>",
             "link_label": "Shop now",
-            "link": "shopify:\/\/products\/no-judgement"
+            "link": "shopify:\/\/products\/no-judgement-tincture"
           }
         },
         "1637208250599253a3-2": {
@@ -101,9 +101,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/img_no_regrets_02.png",
             "title": "No Regrets",
-            "text": "<p>Blend of 1500mg CBD, ashwaganda & shatavari for energy & decision-making<\/p>",
+            "text": "<p>Blend of 100mg CBD, Gotu Kola & Ginseng extracts for clarity & empowerment<\/p>",
             "link_label": "Shop now",
-            "link": "shopify:\/\/products\/no-regrets"
+            "link": "shopify:\/\/products\/no-regrets-tincture"
           }
         }
       },
@@ -264,7 +264,7 @@
         "1637204178ba5ce8cf-2": {
           "type": "button",
           "settings": {
-            "button_label": "Lear our story",
+            "button_label": "Learn our story",
             "button_link": "shopify:\/\/pages\/our-story"
           }
         }

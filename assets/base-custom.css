@@ -22,13 +22,46 @@
 sticky-header.header-wrapper {
     box-shadow: 0 10px 5px -5px #ede3dc;
 }
+
 sticky-header.header-wrapper.no-background {
     box-shadow: unset;
+    background-color: unset;
 }
+
+.header__heading-logo {
+    width: 198px;
+}
+
 .header__heading-link {
     display: flex;
     align-items: center;
     column-gap: 0.2rem;
+}
+
+.header__menu-item,
+.header__icon.header__icon--account,
+.header__icon.header__icon--cart {
+    display: inline-table;
+    color: #011E42;
+    font-family: 'Glacial Indifference Regular', serif;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.no-background .header__icon--menu,
+.no-background .header__icon--account,
+.no-background .header__icon--cart {
+    color: #fff;
+}
+
+.no-background .header__heading-link img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
 }
 
 .no-background .header__heading-link:hover span {
@@ -46,21 +79,6 @@ sticky-header.header-wrapper.no-background {
 
 .no-background .header__heading {
     pointer-events: unset;
-}
-
-.header__menu-item,
-.header__icon.header__icon--account,
-.header__icon.header__icon--cart {
-    display: inline-table;
-    color: #011E42;
-    font-family: 'Glacial Indifference Regular', serif;
-    font-style: normal;
-    font-weight: normal;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
 }
 
 .header__active-menu-item {
@@ -178,7 +196,7 @@ sticky-header.header-wrapper.no-background {
 }
 
 .footer .footer__content-top .list-social__item:nth-child(1) .list-social__link {
-    background: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-faceboo-circular.png?v=1637349170);
+    background: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-facebook-circular.png?v=1637873088);
     background-size: contain;
     width: 40px;
     height: 40px;
@@ -186,7 +204,7 @@ sticky-header.header-wrapper.no-background {
 }
 
 .footer .footer__content-top .list-social__item:nth-child(2) .list-social__link {
-    background: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-instagram-circular.png?v=1637349170);
+    background: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-instagram-circular.png?v=1637873089);
     background-size: contain;
     width: 40px;
     height: 40px;
@@ -196,7 +214,8 @@ sticky-header.header-wrapper.no-background {
 /* homepage */
 
 .image-with-text.top-banner {
-    margin-bottom: 0px;
+    margin-top: -100px;
+    margin-bottom: 0;
 }
 
 .image-with-text__heading {
@@ -343,7 +362,8 @@ sticky-header.header-wrapper.no-background {
 }
 
 .multicolumn.selling-products .multicolumn-card .multicolumn-card__image-wrapper {
-    width: 70%;
+/*     width: 70%; */
+  	width: 99%;
     margin: auto;
 }
 
@@ -360,7 +380,7 @@ sticky-header.header-wrapper.no-background {
     font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 29px;
     text-align: center;
     color: #011E42;
@@ -374,11 +394,13 @@ sticky-header.header-wrapper.no-background {
     font-family: 'Glacial Indifference Regular', serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
-
+	
     color: #011E42;
+  	max-width: 260px;
+  	margin: 0 auto;
 }
 
 .multicolumn.selling-products .multicolumn-card .multicolumn-card__info .link {
@@ -509,32 +531,35 @@ sticky-header.header-wrapper.no-background {
 
 .image-with-text.why-best .image-with-text__content .image-with-text__text p:nth-child(1)::before {
     content: '';
-    background-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-organically-produced.png?v=1637332802);
+    background-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-organically-produced.png?v=1638286897);
     position: absolute;
     top: 10px;
     left: -92px;
     width: 64px;
     height: 64px;
+  	background-size: cover;
 }
 
 .image-with-text.why-best .image-with-text__content .image-with-text__text p:nth-child(3)::before {
     content: '';
-    background-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-third-party-verified.png?v=1637332803);
+    background-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-third-party-verified.png?v=1638286896);
     position: absolute;
     top: 10px;
     left: -92px;
     width: 64px;
     height: 64px;
+  	background-size: cover;
 }
 
 .image-with-text.why-best .image-with-text__content .image-with-text__text p:nth-child(5)::before {
     content: '';
-    background-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-shipped.png?v=1637332802);
+    background-image: url(//cdn.shopify.com/s/files/1/0610/9462/5509/files/icon-shipped.png?v=1638286896);
     position: absolute;
     top: 10px;
     left: -92px;
     width: 64px;
     height: 64px;
+  	background-size: cover;
 }
 
 .multicolumn.home-testimonials {
@@ -609,8 +634,6 @@ sticky-header.header-wrapper.no-background {
     margin-top: 40px;
 }
 
-
-
 @media screen and (min-width: 990px) {
     sticky-header.header-wrapper .header {
         padding-top: 0;
@@ -647,7 +670,7 @@ sticky-header.header-wrapper.no-background {
   	.header__heading-link span:first-child {
         font-size: 30px;
     }
-  
+
     .no-background .header__heading-link span {
         color: #fff;
     }
@@ -747,6 +770,27 @@ sticky-header.header-wrapper.no-background {
     }
 }
 @media screen and (max-width: 749px) {
+
+    #Details-menu-drawer-container.menu-opening .header__icon.header__icon--menu {
+        z-index: 20;
+        right: 10px;
+        left: unset;
+        position: absolute;
+        top: 10px;
+        color: black;
+    }
+
+    #Details-menu-drawer-container.menu-opening #menu-drawer {
+        top: 0;
+        width: 100vw;
+        /* height: 100vh; */
+        height: calc(100vh - 37px);
+    }
+
+    .shopify-section-header-sticky #Details-menu-drawer-container.menu-opening #menu-drawer {
+        top: 0px; 
+        height: 100vh;
+    }
 
     .image-with-text.top-banner .image-with-text__heading {
         font-size: 40px;

@@ -269,6 +269,13 @@
         "full_width": false,
         "custom_class": "oregon-banner"
       }
+    },
+    "163785202807d660ad": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "page": "our-story"
+      }
     }
   },
   "order": [
@@ -278,6 +285,7 @@
     "163760313607af6209",
     "16376031407e0b9dd4",
     "16377254244909bd01",
-    "1637603237d10f4c1e"
+    "1637603237d10f4c1e",
+    "163785202807d660ad"
   ]
 }

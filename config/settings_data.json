@@ -22,7 +22,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "Sign up for the newsletter to get 10% off",
               "color_scheme": "background-1",
               "link": ""
             }

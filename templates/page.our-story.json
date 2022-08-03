@@ -1,0 +1,153 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1637853793adc88852": {
+      "type": "rich-text",
+      "blocks": {
+        "16378537937c0fd705-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shift the narrative away from  quick self-care hacks toward long-term wellness",
+            "heading_size": "h1"
+          }
+        },
+        "16378537937c0fd705-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Being a mom is a full-time job, whether you are a stay-at-home mom or working mom. As moms, we are busy taking care of others, so the advice we’ve been receiving is to prioritize <br\/>Self care. But what is Self care? While the intention behind the word is good, the term Self care has been hijacked to sell products designed to create an unrealistic zen that we will forever be chasing. <br\/><br\/>True self-care is not salt baths and candles, it is making a daily choice to do things that contribute to our long-term well-being. It’s when we stop chasing perfection, and do things which actually give us internal strength to handle everything that comes our way. We knew quick self-care hacks didn’t work for moms. That’s why we created CBD for moms: to help all women reach the long-term wellness.<br\/><br\/>Sonya T. CEO<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16378537937c0fd705-0",
+        "16378537937c0fd705-1"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true,
+        "custom_class": ""
+      }
+    },
+    "1637853961d919dc09": {
+      "type": "multicolumn",
+      "blocks": {
+        "1637853961b2def3c2-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_our_story_01.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1637853961b2def3c2-1": {
+          "type": "column",
+          "settings": {
+            "title": "Made for absolutely  all moms",
+            "text": "<p>Don’t put yourself in a box because there is no box when it comes to motherhood. <br\/><br\/>Single moms, partnered moms, <br\/>stay-at-home moms, opt-outside moms, working moms, party moms, active moms, binge-watching moms, step moms, plant moms, dog moms, grandmoms. All moms.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1637853961b2def3c2-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_our_story_02.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1637853961b2def3c2-0",
+        "1637853961b2def3c2-1",
+        "1637853961b2def3c2-2"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "custom_class": "made-for-moms"
+      }
+    },
+    "1637853973859867dc": {
+      "type": "image-with-text",
+      "blocks": {
+        "1637853972bd94cfbc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "With us you know exactly what you’re getting"
+          }
+        },
+        "1637853972bd94cfbc-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’ve partnered with a remarkable mom-run family-owned farm called FSOil, based in the pristine growing region of the Willamette Valley, Oregon. Producing Full Spectrum winterized oil, USDA Organic, distillate and THC compliant.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1637853972bd94cfbc-0",
+        "1637853972bd94cfbc-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img_our_story_03.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "full_width": false,
+        "custom_class": ""
+      }
+    },
+    "16378542780178327a": {
+      "type": "image-with-text",
+      "blocks": {
+        "1637854278e8c57466-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Built for the community"
+          }
+        },
+        "1637854278e8c57466-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With every purchase we donate to the organization called Postpartum support international for mothers to receive help during their motherhood journey.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1637854278e8c57466-0",
+        "1637854278e8c57466-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img_our_story_04.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "text_first",
+        "full_width": false,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1637853793adc88852",
+    "1637853961d919dc09",
+    "1637853973859867dc",
+    "16378542780178327a"
+  ]
+}
