@@ -83,6 +83,16 @@
         "id": "gradient_background_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+      },
+      {
+        "id": "colors_background_3",
+        "type": "color",
+        "label": "Background 3"
+      },
+      {
+        "id": "colors_background_4",
+        "type": "color",
+        "label": "Background 4(Footer)"
       }
     ]
   },

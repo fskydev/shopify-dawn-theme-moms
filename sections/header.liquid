@@ -80,11 +80,9 @@
   </symbol>
 </svg>
 
-{%- if request.page_type == 'index' -%}
-<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper homepage-header no-background {% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-{%- else -%}
-<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-{%- endif -%}
+
+<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper homepage-header color-{{ section.settings.color_scheme }} {% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
@@ -331,27 +329,24 @@
       </details-modal>
     {%- endif -%}
 
-    {%- if request.page_type == 'index' -%}
-      <h1 class="header__heading">
-    {%- endif -%}
-        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-          {%- if section.settings.logo != blank -%}
-            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
-            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
-              src="{{ section.settings.logo | img_url: image_size }}"
-              loading="lazy"
-              class="header__heading-logo"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-          {%- else -%}
-            <span class="h2">cbd for moms</span><span class="abbr">co</span>
-          {%- endif -%}
-        </a>
-    {%- if request.page_type == 'index' -%}
-      </h1>
-    {%- endif -%}
+    <h1 class="header__heading">
+      <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+        {%- if section.settings.logo != blank -%}
+          {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+          <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+            src="{{ section.settings.logo | img_url: image_size }}"
+            loading="lazy"
+            class="header__heading-logo"
+            width="{{ section.settings.logo.width }}"
+            height="{{ section.settings.logo.height }}"
+            alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+          >
+        {%- else -%}
+          <span class="h2">cbd for moms</span><span class="abbr">co</span>
+        {%- endif -%}
+      </a>
+    </h1>
+
 
     {%- if section.settings.menu != blank -%}
       <nav class="header__inline-menu">
@@ -479,10 +474,16 @@
         </details>
       </details-modal>
 
+      {% assign line_to_learn = section.settings.menu.links[2] %}
+      <a href="{{ line_to_learn.url }}" class=" small-hide header__menu-item list-menu__item link link--text focus-inset"{% if line_to_learn.current %} aria-current="page"{% endif %}>
+        <span {%- if line_to_learn.current %} class="header__active-menu-item"{% endif %}>{{ line_to_learn.title | escape }}</span>
+      </a>
+
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
           <!-- {% render 'icon-account' %} -->
-          <span class="">
+          <img src="{{ 'icon__user.png' | asset_url }}" />
+          <span class="hidden">
             {%- liquid
               if customer
                 echo 'customer.account_fallback' | t
@@ -495,7 +496,7 @@
       {%- endif -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        <span class="">{{ 'templates.cart.cart' | t }}{%- if cart != empty -%}(<span class="cart-count">{{ cart.item_count }}</span>){%- endif -%}</span>
+        <span><img src="{{ 'icon__shopping_cart.png' | asset_url }}" /><span class="hidden">{{ 'templates.cart.cart' | t }}</span>{%- if cart != empty -%}(<span class="cart-count">{{ cart.item_count }}</span>){%- endif -%}</span>
       </a>
     </div>
   </header>
@@ -554,7 +555,7 @@
             headerWrapper.classList.remove("no-background");
           }else{
             if(headerWrapper.classList.contains("homepage-header")){
-              headerWrapper.classList.add("no-background");
+              // headerWrapper.classList.add("no-background");
             }            
           }
 
@@ -686,7 +687,7 @@
       "type": "range",
       "id": "logo_width",
       "min": 50,
-      "max": 250,
+      "max": 300,
       "step": 10,
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",

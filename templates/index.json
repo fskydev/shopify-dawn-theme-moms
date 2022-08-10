@@ -6,303 +6,368 @@
         "163720049755c3d76e-0": {
           "type": "heading",
           "settings": {
-            "heading": "Calm for a modern mom"
+            "heading": "Daily calm for a modern mom"
           }
         },
         "163720049755c3d76e-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pretty much the No Stress Club you’ve been waiting for.<\/p>"
+            "text": "<p>Premium CBD oil,  delivered to your door.<\/p>"
           }
         },
         "163720049755c3d76e-2": {
           "type": "button",
           "settings": {
-            "button_label": "Shop now",
+            "button_label": "Get calm",
             "button_link": "#"
+          }
+        },
+        "7fdb63ed-b2dc-40fc-bd56-9abb84642f56": {
+          "type": "html",
+          "settings": {
+            "html": ""
+          }
+        },
+        "2218772a-e714-46d5-bae7-ef3cd1da32fa": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"benefit-icons-wrapper\">\n<ul>\n  <li><img src=\"{{ 'icon__home__top_banner_1.png' | asset_url }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_2.png' | asset_url }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_3.png' | asset_url }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_2.png' | asset_url }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_3.png' | asset_url }}\" \/><\/li>\n<\/ul>\n<\/div>"
           }
         }
       },
       "block_order": [
         "163720049755c3d76e-0",
         "163720049755c3d76e-1",
-        "163720049755c3d76e-2"
+        "163720049755c3d76e-2",
+        "7fdb63ed-b2dc-40fc-bd56-9abb84642f56",
+        "2218772a-e714-46d5-bae7-ef3cd1da32fa"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/img_hero.jpg",
+        "image": "shopify:\/\/shop_images\/img__home__hero.png",
         "height": "large",
         "color_scheme": "background-2",
-        "layout": "image_first",
+        "layout": "text_first",
         "full_width": true,
         "custom_class": "top-banner"
       }
     },
-    "rich_text": {
+    "16595777927336cee9": {
       "type": "rich-text",
       "blocks": {
-        "heading": {
+        "165957779233674c2d-0": {
           "type": "heading",
           "settings": {
-            "heading": "",
+            "heading": "So What Is CBD?",
             "heading_size": "h1"
           }
         },
-        "text": {
+        "165957779233674c2d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We are set to redefine self-care and help all moms feel great while doing anything they set their mind to.<\/p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Read Our Story",
-            "button_link": "shopify:\/\/pages\/our-story",
-            "button_style_secondary": false
+            "text": "<p>CBD is short for cannabidiol. It’s a <strong>non-psychoactive<\/strong> compound extracted from the hemp plant, which works within your <a href=\"#\" target=\"_blank\" title=\"#\">endocannabinoid system (click the link to read about it, it’s pretty incredible!)<\/a> to help your body achieve homeostasis (aka balance). <\/p>"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "165957779233674c2d-0",
+        "165957779233674c2d-1"
       ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "custom_class": "read-our-story"
+        "custom_class": "what-is-cbd"
       }
     },
-    "16372082505e94469c": {
-      "type": "multicolumn",
-      "blocks": {
-        "1637208250599253a3-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img_no_stress_02.png",
-            "title": "No Stress",
-            "text": "<p>Blend of 500mg CBD, catnip & chamomile tea extract for daily calm<\/p>",
-            "link_label": "Shop now",
-            "link": "shopify:\/\/products\/no-stress-tincture"
-          }
-        },
-        "1637208250599253a3-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img_no_judgement_02.png",
-            "title": "No Judgement",
-            "text": "<p>Blend of 750mg CBD, ashwaganda & lemon balm for mindfulness & focus<\/p>",
-            "link_label": "Shop now",
-            "link": "shopify:\/\/products\/no-judgement-tincture"
-          }
-        },
-        "1637208250599253a3-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img_no_regrets_02.png",
-            "title": "No Regrets",
-            "text": "<p>Blend of 100mg CBD, Gotu Kola & Ginseng extracts for clarity & empowerment<\/p>",
-            "link_label": "Shop now",
-            "link": "shopify:\/\/products\/no-regrets-tincture"
-          }
-        }
-      },
-      "block_order": [
-        "1637208250599253a3-0",
-        "1637208250599253a3-1",
-        "1637208250599253a3-2"
-      ],
-      "settings": {
-        "title": "No stress, No judgements, No regrets",
-        "description": "<p>3 types of tinctures to help promote daily calm, mindfullness and empowerement.<\/p>",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "secondary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "custom_class": "selling-products"
-      }
-    },
-    "16372033928c214c01": {
+    "16596196484ebcba2b": {
       "type": "image-with-text",
       "blocks": {
-        "16372033927501d363-0": {
+        "1659619648f6183208-0": {
           "type": "heading",
           "settings": {
-            "heading": "What's CBD"
+            "heading": "Ok, But How Can CBD Help Moms?"
           }
         },
-        "16372033927501d363-1": {
+        "1659619648f6183208-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>And can it make me high?<\/strong><\/p><p>CBD is short for cannabidiol. It's one of the chemical compounds found in the cannabis plant. THC is the compound that gets people high. CBD does not. <br\/><br\/>But what CBD has are anti-inflammatory, antioxidant, anti-psychotic, anti-convulsant, and antidepressant properties.<\/p>"
+            "text": "<p>As a mom, you know better than anyone that being stressed out is a fast-track to feeling unwell. <strong>The more<\/strong> you have on your plate, <br\/><strong>the higher<\/strong> your risk of getting headaches, having trouble sleeping, battling anxiety, etc.<br\/><br\/><strong>CBD helps balance those things, so depending on what’s troubleing you it can help improve sleep, appetite, digestion & mood, etc. <\/strong><\/p>"
+          }
+        },
+        "1659619648f6183208-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find your balance",
+            "button_link": "#"
           }
         }
       },
       "block_order": [
-        "16372033927501d363-0",
-        "16372033927501d363-1"
+        "1659619648f6183208-0",
+        "1659619648f6183208-1",
+        "1659619648f6183208-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/img_section_whats_cbd.png",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "text_first",
-        "full_width": false,
-        "custom_class": "whats-cbd"
-      }
-    },
-    "163720341071b040b2": {
-      "type": "image-with-text",
-      "blocks": {
-        "1637203410c44c02fb-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Why we are the best choice for moms:"
-          }
-        },
-        "1637203410c44c02fb-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Organically produced<\/strong><\/p><p>Our CBD oil & herbs comes form Hemp plants grown responsibly in Oregon at the family-owned farm.<\/p><p><strong>Third-party verified<\/strong><\/p><p>All of our formulas are lab tested to maintain the highest quality of product. <\/p><p><strong>Delivered to your door<\/strong><\/p><p>We blend, bottle and ship our products straight from Oregon to your door<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1637203410c44c02fb-0",
-        "1637203410c44c02fb-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/img_section_why_best.jpg",
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/img__home__how_help.png",
+        "height": "small",
         "color_scheme": "background-2",
         "layout": "image_first",
-        "full_width": false,
-        "custom_class": "why-best"
+        "full_width": true,
+        "custom_class": "find-balance"
       }
     },
-    "16372035976be107bb": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/bg_banner.png",
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "1637204160e935871c": {
-      "type": "multicolumn",
+    "1659623018c13556fe": {
+      "type": "image-with-text",
       "blocks": {
-        "1637204160d2c37703-0": {
-          "type": "column",
+        "16596230184aa9ae8c-0": {
+          "type": "heading",
           "settings": {
-            "title": "",
-            "text": "<p>CBD for moms helped calm the nerves and anxiety that come with motherhood. <\/p>",
-            "link_label": "-Amanda R.",
-            "link": "#"
+            "heading": "And Will It Make Me High?"
           }
         },
-        "1637204160d2c37703-1": {
-          "type": "column",
+        "16596230184aa9ae8c-1": {
+          "type": "text",
           "settings": {
-            "title": "",
-            "text": "<p>(CBD use) is not about escapism; rather, it’s about being higher-functioning. Daily CBD use helps me be more clear-headed and calm.<\/p>",
-            "link_label": "-Sarah H.",
-            "link": "#"
+            "text": "<p>No :) Our Oil extract comes from Hemp, not Marijuana, and contains less than 0.1% THC (the compound responsible for “the high” effect). So it’s incredibly safe to take.<\/p>"
           }
         },
-        "1637204160d2c37703-2": {
-          "type": "column",
+        "16596230184aa9ae8c-2": {
+          "type": "button",
           "settings": {
-            "title": "",
-            "text": "<p>CBD for moms helps me be a more present and even-tempered mom. I’m able to more calmly react and not get rattled.<\/p>",
-            "link_label": "-Laura A.",
-            "link": "#"
+            "button_label": "Get a peace of mind",
+            "button_link": "#"
+          }
+        },
+        "0def3b8f-9811-4d00-a8c8-2f88cc428965": {
+          "type": "text",
+          "settings": {
+            "text": "<p>AKA See lab results<\/p>"
           }
         }
       },
       "block_order": [
-        "1637204160d2c37703-0",
-        "1637204160d2c37703-1",
-        "1637204160d2c37703-2"
+        "16596230184aa9ae8c-0",
+        "16596230184aa9ae8c-1",
+        "16596230184aa9ae8c-2",
+        "0def3b8f-9811-4d00-a8c8-2f88cc428965"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img__home__dropper2.png",
+        "height": "small",
+        "color_scheme": "background-2",
+        "layout": "text_first",
+        "full_width": true,
+        "custom_class": "get-peace-mind"
+      }
+    },
+    "1659633375e2f8205f": {
+      "type": "image-with-text",
+      "blocks": {
+        "1659633375e42a018b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "How Should I Take it?"
+          }
+        },
+        "09404bb2-0565-4644-b9cb-c1eed11b2eaf": {
+          "type": "html",
+          "settings": {
+            "html": "<span>Think of CBD as your daily wellness vitamin, as it works best if taken daily. You could:<\/span>\n<ul>\n  <li>Put a dropper under tongue morning or evening<\/li>\n  <li>Add it to your smoothie, coffee, or tea<\/li>\n  <li>Mix it with your night time cocktail or mocktail<\/li>\n  <li>Rub it in your sore muscles from carring all the kids, etc.<\/li>\n<\/ul>\n<span><b>Our team is always available to answer questions<\/b> <br>and consult you on appropriate dosage.<\/span>"
+          }
+        },
+        "1659633375e42a018b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact us",
+            "button_link": "shopify:\/\/pages\/contact"
+          }
+        }
+      },
+      "block_order": [
+        "1659633375e42a018b-0",
+        "09404bb2-0565-4644-b9cb-c1eed11b2eaf",
+        "1659633375e42a018b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img__home__how_to_take.png",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "full_width": true,
+        "custom_class": "home-contact-us find-balance"
+      }
+    },
+    "16597130450247cf1c": {
+      "type": "testimonials",
+      "blocks": {
+        "9996e485-f38e-46f0-a95d-6286e45b5ccb": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/photo__home__testimonial_1.png",
+            "name": "Christina F.",
+            "content": "<p>“Busy momma, bad sleep.  After a few days of taking the No Stress tincture I woke up feeling refreshed. 10\/10 would recommend ✨”<\/p>"
+          }
+        },
+        "5c0c1513-4780-44c7-a715-b4908c1f15fb": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/photo__home__testimonial_2.png",
+            "name": "Dana Drury",
+            "content": "<p>“Make my hands feel great when I wear them to work in and work on the computer.”<\/p>"
+          }
+        },
+        "e5ad11d2-09e7-4405-bdeb-f680d5d7ef0c": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/photo__home__testimonial_3.png",
+            "name": "Tamee L",
+            "content": "<p>“The last package on the shelf and they are wonderful. I didn't think small would fit. Tried them on and have not taken them off.”<\/p>"
+          }
+        },
+        "8ca3ff72-31a3-4736-bad9-3d34df632cd0": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify:\/\/shop_images\/photo__home__testimonial_1.png",
+            "name": "Whitney",
+            "content": "<p>I orded this Upright Walker for my Mom. It was easy to put together and seems comfortable for her to use. We have been looking for something that was made to hold a person upright and this one does. I am happy I was able to find one.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9996e485-f38e-46f0-a95d-6286e45b5ccb",
+        "5c0c1513-4780-44c7-a715-b4908c1f15fb",
+        "e5ad11d2-09e7-4405-bdeb-f680d5d7ef0c",
+        "8ca3ff72-31a3-4736-bad9-3d34df632cd0"
+      ],
+      "settings": {
+        "full_width": true
+      }
+    },
+    "16597194327d6bb54a": {
+      "type": "multicolumn",
+      "blocks": {
+        "165971943267739409-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon__home__natural_organic.png",
+            "title": "",
+            "text": "<p>All natural <\/p><p>and organic<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "165971943267739409-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon__home__tested.png",
+            "title": "",
+            "text": "<p>3-rd party<\/p><p>lab tested<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "165971943267739409-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon__home__shipping.png",
+            "title": "",
+            "text": "<p>Shipped To<\/p><p>Your Door<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "32fc8b2f-2f10-4089-b83c-83136e1ccb2a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon__home__guarantee.png",
+            "title": "",
+            "text": "<p>Mom Guarantee:<\/p><p>Free Returns<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165971943267739409-0",
+        "165971943267739409-1",
+        "165971943267739409-2",
+        "32fc8b2f-2f10-4089-b83c-83136e1ccb2a"
       ],
       "settings": {
         "title": "",
         "description": "",
-        "image_width": "third",
+        "image_width": "half",
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "custom_class": "home-testimonials"
+        "custom_class": "service-benefits"
       }
     },
-    "1637204178577b35c1": {
+    "1659637720d07442f8": {
       "type": "image-with-text",
       "blocks": {
-        "1637204178ba5ce8cf-0": {
+        "1659637720342b0118-0": {
           "type": "heading",
           "settings": {
-            "heading": "Grown and produced at the mom-run farm in Oregon"
+            "heading": "Created by a mom Who gets it"
           }
         },
-        "1637204178ba5ce8cf-1": {
+        "1659637720342b0118-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Good Manufacturing Practices Certified (GMP), Hemp Authority Certified (HA), USDA Certified Organic, and Kosher Certified - the list goes on.<\/p>"
+            "text": "<p>When, as a new mom, I was going through a divorce in the middle of the pandemic, I was looking for an unmedicated way to help me manage anxiety. I learnt about CBD, but, in my search for an effective hemp oil, found questionable products that I couldn’t get behind. <br\/><br\/>So I decided to build my own, and make it <br\/><strong>the best and safest one yet.<\/strong> <\/p>"
           }
         },
-        "1637204178ba5ce8cf-2": {
+        "1659637720342b0118-2": {
           "type": "button",
           "settings": {
-            "button_label": "Learn our story",
+            "button_label": "Our story",
             "button_link": "shopify:\/\/pages\/our-story"
           }
         }
       },
       "block_order": [
-        "1637204178ba5ce8cf-0",
-        "1637204178ba5ce8cf-1",
-        "1637204178ba5ce8cf-2"
+        "1659637720342b0118-0",
+        "1659637720342b0118-1",
+        "1659637720342b0118-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/img_section_oregon.png",
-        "height": "adapt",
-        "color_scheme": "background-1",
+        "image": "shopify:\/\/shop_images\/img__home__our_story2.png",
+        "height": "small",
+        "color_scheme": "background-2",
         "layout": "image_first",
-        "full_width": false,
-        "custom_class": "oregon-banner"
+        "full_width": true,
+        "custom_class": "our-story home-contact-us find-balance"
       }
     },
-    "16372059205cf404cf": {
-      "type": "video",
-      "disabled": true,
+    "16596412857338310c": {
+      "type": "apps",
+      "blocks": {
+        "a0b44156-b575-4095-a28a-0199aa441ad2": {
+          "type": "shopify:\/\/apps\/instafeed-shoppable-feed\/blocks\/app-block\/37be8af8-61d9-482d-a6b3-0b1be143eaf2",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "a0b44156-b575-4095-a28a-0199aa441ad2"
+      ],
       "settings": {
-        "heading": "Video",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": true
+        "include_margins": true
       }
     }
   },
   "order": [
     "1637200497c524310d",
-    "rich_text",
-    "16372082505e94469c",
-    "16372033928c214c01",
-    "163720341071b040b2",
-    "16372035976be107bb",
-    "1637204160e935871c",
-    "1637204178577b35c1",
-    "16372059205cf404cf"
+    "16595777927336cee9",
+    "16596196484ebcba2b",
+    "1659623018c13556fe",
+    "1659633375e2f8205f",
+    "16597130450247cf1c",
+    "16597194327d6bb54a",
+    "1659637720d07442f8",
+    "16596412857338310c"
   ]
 }

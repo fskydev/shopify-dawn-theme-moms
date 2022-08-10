@@ -3,10 +3,11 @@
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
-    "colors_text": "#121212",
+    "colors_text": "#27649c",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#FFFFFF",
-    "colors_background_2": "#f4eae6",
+    "colors_background_2": "#fbf1ed",
+    "colors_background_4": "#d4bae0",
     "type_header_font": "playfair_display_n7",
     "type_body_font": "assistant_n4",
     "sale_badge_color_scheme": "accent-1",
@@ -15,6 +16,7 @@
     "social_facebook_link": "https:\/\/facebook.com\/shopify",
     "social_pinterest_link": "",
     "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "gradient_background_4": "#d4bae0",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -22,7 +24,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Sign up for the newsletter to get 10% off",
+              "text": "GET 25% OFF + FREE SHIPPING",
               "color_scheme": "background-1",
               "link": ""
             }
@@ -37,9 +39,9 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "background-2",
           "logo": "shopify:\/\/shop_images\/logo.png",
-          "logo_width": 250,
+          "logo_width": 300,
           "logo_position": "middle-right",
           "menu": "main-menu",
           "show_line_separator": false,
@@ -52,28 +54,44 @@
           "footer-1": {
             "type": "text",
             "settings": {
-              "heading": "Let’s do this together",
-              "subtext": "<p>Sign up for our newsletter for fun community surprises!<\/p>"
+              "heading": "Enter The Village",
+              "subtext": "<p>15% off your first order and no spam ever <\/p>"
+            }
+          },
+          "87bc3231-1e2d-44f1-b224-53186606dead": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "4580f62f-3925-4550-b3fc-f8c6a14c6e91": {
+            "type": "text",
+            "settings": {
+              "heading": "copyright",
+              "subtext": "<p>Copyright © CBD For Moms 2022 <br\/>CBD For Moms, Inc.<br\/>Tigard, OR 97223<br\/>hello@cbdformoms.co<\/p>"
             }
           },
           "eb3104f0-5a79-4d64-b783-b34324827648": {
             "type": "text",
             "settings": {
               "heading": "FDA Disclosure",
-              "subtext": "<p>These statements have not been evaluated by the FDA and are not intended to diagnose, cure, mitigate, treat, or prevent any disease. If you are considering making any changes to your lifestyle, diet or nutrition, or skin care regimen you should first consult your doctor or healthcare provider. Our products should be used only as directed on the label. If you are pregnant, nursing, taking medication, or have a medical condition, we suggest consulting with your physician before using any of our products.<\/p>"
+              "subtext": "<p>** These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease. Always consult your physician or other qualified health care professional if you have any questions regarding the use of CBD For Moms, particularly if you take prescription medication, believe that you may have a medical condition, are pregnant or nursing<\/p>"
             }
           }
         },
         "block_order": [
           "footer-1",
+          "87bc3231-1e2d-44f1-b224-53186606dead",
+          "4580f62f-3925-4550-b3fc-f8c6a14c6e91",
           "eb3104f0-5a79-4d64-b783-b34324827648"
         ],
         "settings": {
-          "color_scheme": "background-2",
+          "color_scheme": "background-4",
           "newsletter_enable": true,
           "newsletter_heading": "",
           "show_social": true,
-          "enable_country_selector": true,
+          "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": false
         }

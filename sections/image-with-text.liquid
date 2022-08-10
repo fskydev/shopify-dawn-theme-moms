@@ -52,6 +52,10 @@
                     {{ block.settings.button_label | escape }}
                   </a>
                 {%- endif -%}
+              {%- when 'html' -%}
+                <div class="image-with-text__html rte" {{ block.shopify_attributes }}>{{ block.settings.html }}</div>
+              {%- when 'liquid' -%}
+                <div class="image-with-text__html" {{ block.shopify_attributes }}>{{ block.settings.custom_liquid }}</div>
             {%- endcase -%}
           {%- endfor -%}
         </div>
@@ -173,13 +177,36 @@
     {
       "type": "text",
       "name": "t:sections.image-with-text.blocks.text.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "richtext",
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "name": "HTML",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "html",
+          "id": "html",
+          "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+        }
+      ]
+    },
+    {
+      "type": "liquid",      
+      "name": "Custom Liquid",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "Custom Liquid"
         }
       ]
     },

@@ -12,6 +12,14 @@
   --gradient-background: var(--gradient-base-background-2);
 }
 
+.color-background-3 {
+  --color-background: var(--color-base-background-3);
+}
+
+.color-background-4 {
+  --color-background: var(--color-base-background-4);
+}
+
 .color-inverse {
   --color-foreground: var(--color-base-background-1);
   --color-background: var(--color-base-text);
@@ -253,6 +261,8 @@ html.no-js .no-js-hidden {
 body,
 .color-background-1,
 .color-background-2,
+.color-background-3,
+.color-background-4,
 .color-inverse,
 .color-accent-1,
 .color-accent-2 {

@@ -1,0 +1,97 @@
+{{ 'section-testimonials.css' | asset_url | stylesheet_tag }}
+
+<div class="{% unless section.settings.full_width %}page-width{% endunless %}" style="background-color: #e0edf2;">
+  <div class="testimonials-container" data-reviews-cnt="{{ section.blocks.size }}">
+    <div class="gallery">
+      <div class="photos">
+      {%- for block in section.blocks -%}
+        {% assign index = forloop.index | minus: 1 %}
+        <div class="photo {% if index == 0 %}active{% endif %}" style="left: {{4 | times: index }}rem;">
+          {%- if block.settings.photo != blank -%}
+            <img
+              src="{{ block.settings.photo | img_url: 'x250' }}"
+              loading="lazy"
+            >
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="slider">
+      {%- for block in section.blocks -%}
+        <div class="box">
+          <div class="details">
+              <div>
+                {%- if block.settings.content != blank -%}
+                  {{ block.settings.content }}
+                {%- endif -%}
+              </div>
+              <h4>
+                <span>- </span>
+                {%- if block.settings.name != blank -%}
+                {{ block.settings.name }}
+              {%- endif -%}
+              </h4>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+    
+    <div class="arrow-icons-container">
+      <div class="prev-wrapper">
+        {% include 'icon-arrow' %}
+      </div>
+      <div class="next-wrapper">
+        {% include 'icon-arrow' %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ 'section-testimonials.js' | asset_url | script_tag }}
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.video.settings.full_width.label",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "photo",
+          "label": "Photo"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content of Review"
+        }
+      ]
+    }
+  ],
+  "templates": ["index"],
+  "presets": [
+    {
+      "name": "Testimonials"
+    }
+  ]
+}
+{% endschema %}
