@@ -12,20 +12,20 @@
     src: url('GlacialIndifference-Bold.woff') format('woff');
 }
 
-
+/* --- global --- */
 @font-face {
     font-family: 'EightiesComeback BlkSmCn';
-    src: url("EightiesComeback-BlkSmCn.otf" ) format("otf");
+    src: url("EightiesComeback-BlkSmCn.otf" ) format("opentype");
 }
 
 @font-face {
     font-family: 'EightiesComeback ExtBdCond';
-    src: url("EightiesComeback-ExtBdCond.otf" ) format("otf");
+    src: url("EightiesComeback-ExtBdCond.otf" ) format("opentype");
 }
 
 @font-face {
     font-family: 'EightiesComeback SmBdSmCn';
-    src: url("EightiesComeback-SmBdSmCn.otf" ) format("otf");
+    src: url("EightiesComeback-SmBdSmCn.otf" ) format("opentype");
 }
 
 
@@ -52,6 +52,10 @@
     padding-right: 28rem;
 }
 
+
+.image-with-text__content {
+    max-width: 700px;
+}
 /* --- header --- */
 sticky-header.header-wrapper {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -72,7 +76,7 @@ sticky-header.header-wrapper {
     color: #27649C;
     font-family: 'Reader Pro', serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     padding-left: 5px;
     padding-right: 5px;
     text-align: center;
@@ -119,6 +123,7 @@ sticky-header.header-wrapper {
     font-size: 40px;
     line-height: 45px;
     color: #fff;
+    text-transform: capitalize;
 }
 
 .footer .footer__content-top .footer-block:first-child .footer-block__details-content {
@@ -233,9 +238,10 @@ sticky-header.header-wrapper {
 }
 
 .footer-block--newsletter .newsletter-form__field-wrapper .newsletter-form__button span {
-    font-family: 'Reader Bold Pro';
+    font-family: 'Reader Pro';
     font-style: normal;
     font-size: 18px;
+    font-weight: 700;
     text-align: center;
     color: #FFF;
     white-space: nowrap;
@@ -272,17 +278,16 @@ sticky-header.header-wrapper {
     font-family: 'EightiesComeback ExtBdCond';
     font-style: normal;
     font-size: 60px;
-    line-height: 54px;
+    line-height: 65px;
     text-transform: capitalize;
-    letter-spacing: -0.2rem;
 }
 
 .image-with-text.top-banner .image-with-text__text p {
     font-family: 'EightiesComeback SmBdSmCn';
-    font-size: 26px;
+    font-size: 30px;
+    font-weight: 600;
     color: #27649C;
-    line-height: 35px;
-    letter-spacing: -.1rem;
+    line-height: 35px;    
 }
 
 .image-with-text.top-banner .image-with-text__content {
@@ -291,7 +296,8 @@ sticky-header.header-wrapper {
 }
 
 .image-with-text.top-banner .image-with-text__content .image-with-text__text+.button {
-    font-family: 'Reader Bold Pro';
+    font-family: 'Reader Pro';
+    font-weight: 700;
     font-size: 18px;
     color: #FFF;
     text-transform: uppercase;
@@ -331,13 +337,18 @@ sticky-header.header-wrapper {
     transform: translate(-50%, -50%);
 }
 
+.image-with-text.top-banner .benefit-icons-wrapper ul img {
+    width:  50px;
+    height: auto;
+}
+
 .rich-text.what-is-cbd h2 {
     font-family: 'EightiesComeback ExtBdCond';
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
     line-height: 45px;
-    letter-spacing: -0.2rem;
+    text-transform: capitalize;
 }
 
 .rich-text.what-is-cbd .rich-text__text p {
@@ -353,6 +364,26 @@ sticky-header.header-wrapper {
 .rich-text.what-is-cbd .rich-text__text p a {
     color: #F2A2A3;
     text-decoration: none;
+}
+
+.rich-text.what-is-cbd a.button {
+    font-family: 'Reader Pro';
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    background: #F2A2A3;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    border: 2px solid #F2A2A3;
+}
+
+.rich-text.what-is-cbd a.button:hover {
+    color: #F2A2A3;
+    background: #fff;
+    transition: all 0.3s ease;
 }
 
 .image-with-text.find-balance:not(.color-scheme-background-1) {
@@ -376,7 +407,7 @@ sticky-header.header-wrapper {
     font-weight: 900;
     font-size: 40px;
     line-height: 45px;
-    letter-spacing: -0.2rem;
+    text-transform: capitalize;
 }
 
 .image-with-text.find-balance .image-with-text__content .image-with-text__text p {
@@ -390,7 +421,7 @@ sticky-header.header-wrapper {
 }
 
 .image-with-text.find-balance .image-with-text__content .image-with-text__text + .button {
-    font-family: 'Reader Bold Pro';
+    font-family: 'Reader Pro';
     font-size: 18px;
     font-weight: 700;
     color: #FFF;
@@ -431,7 +462,7 @@ sticky-header.header-wrapper {
     font-weight: 900;
     font-size: 40px;
     line-height: 45px;
-    letter-spacing: -0.2rem;
+    text-transform: capitalize;
 }
 
 .image-with-text.get-peace-mind .image-with-text__content .image-with-text__text p {
@@ -445,7 +476,7 @@ sticky-header.header-wrapper {
 }
 
 .image-with-text.get-peace-mind .image-with-text__content .image-with-text__text + .button {
-    font-family: 'Reader Bold Pro';
+    font-family: 'Reader Pro';
     font-size: 18px;
     font-weight: 700;
     color: #FFF;
@@ -485,7 +516,7 @@ sticky-header.header-wrapper {
 }
 
 .image-with-text.home-contact-us .image-with-text__content .image-with-text__html + .button {
-    font-family: 'Reader Bold Pro';
+    font-family: 'Reader Pro';
     font-size: 18px;
     font-weight: 700;
     color: #FFF;
@@ -560,7 +591,7 @@ sticky-header.header-wrapper {
     font-size: 40px;
     line-height: 45px;    
     color: #27649C;
-    letter-spacing: -0.2rem;
+    text-transform: capitalize;
 
     margin: auto;
     max-width: 700px;
@@ -578,7 +609,7 @@ sticky-header.header-wrapper {
     font-family: 'EightiesComeback SmBdSmCn';
     font-size: 24px;
     font-style: italic;
-    letter-spacing: 0.01rem;
+    text-transform: lowercase;
 }
 
 @media screen and (min-width: 990px) {
@@ -743,7 +774,8 @@ sticky-header.header-wrapper {
 
     .image-with-text.top-banner .benefit-icons-wrapper ul li,
     .image-with-text.top-banner .benefit-icons-wrapper ul img {
-        height:  50px
+        height:  50px;
+        width:  auto;
     }
 
     .image-with-text.find-balance .image-with-text__media {

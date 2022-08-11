@@ -31,7 +31,7 @@
         "2218772a-e714-46d5-bae7-ef3cd1da32fa": {
           "type": "liquid",
           "settings": {
-            "custom_liquid": "<div class=\"benefit-icons-wrapper\">\n<ul>\n  <li><img src=\"{{ 'icon__home__top_banner_1.png' | asset_url }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_2.png' | asset_url }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_3.png' | asset_url }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_2.png' | asset_url }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_3.png' | asset_url }}\" \/><\/li>\n<\/ul>\n<\/div>"
+            "custom_liquid": "<div class=\"benefit-icons-wrapper\">\n<ul>\n  <li><img src=\"{{ 'icon__home__top_banner_1.png' | asset_img_url: 'x100' }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_2.png' | asset_img_url: 'x100' }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_3.png' | asset_img_url: 'x100' }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_2.png' | asset_img_url: 'x100' }}\" \/><\/li>\n  <li><img src=\"{{ 'icon__home__top_banner_3.png' | asset_img_url: 'x100' }}\" \/><\/li>\n<\/ul>\n<\/div>"
           }
         }
       },
@@ -64,13 +64,22 @@
         "165957779233674c2d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>CBD is short for cannabidiol. It’s a <strong>non-psychoactive<\/strong> compound extracted from the hemp plant, which works within your <a href=\"#\" target=\"_blank\" title=\"#\">endocannabinoid system (click the link to read about it, it’s pretty incredible!)<\/a> to help your body achieve homeostasis (aka balance). <\/p>"
+            "text": "<p>CBD is short for cannabidiol. It’s a <strong>non-psychoactive<\/strong> compound extracted from the hemp plant, which works within your <strong>endocannabinoid system<\/strong>, and, together with other things, helps your body achieve homeostasis (or in other words, <strong>balance<\/strong>). <br\/><br\/>CBD is not a magical switch, and, same as your vitamin, has a build up effect.<br\/><strong>It works best if taken daily.<\/strong><\/p>"
+          }
+        },
+        "3fa18b75-2dc1-4100-93cc-1a10aada89d7": {
+          "type": "button",
+          "settings": {
+            "button_label": "about the endocannabinoid system",
+            "button_link": "#",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "165957779233674c2d-0",
-        "165957779233674c2d-1"
+        "165957779233674c2d-1",
+        "3fa18b75-2dc1-4100-93cc-1a10aada89d7"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -151,7 +160,7 @@
         "0def3b8f-9811-4d00-a8c8-2f88cc428965"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/img__home__dropper2.png",
+        "image": "shopify:\/\/shop_images\/img__home__dropper.png",
         "height": "small",
         "color_scheme": "background-2",
         "layout": "text_first",
@@ -334,7 +343,7 @@
         "1659637720342b0118-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/img__home__our_story2.png",
+        "image": "shopify:\/\/shop_images\/img__home__our_story.png",
         "height": "small",
         "color_scheme": "background-2",
         "layout": "image_first",
