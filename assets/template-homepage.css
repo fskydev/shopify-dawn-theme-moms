@@ -1,0 +1,461 @@
+.image-with-text.top-banner {
+  margin-top: -100px;
+  margin-bottom: 0;
+}
+
+.image-with-text.top-banner .image-with-text__heading {
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-size: 60px;
+  line-height: 65px;
+  text-transform: capitalize;
+}
+
+.image-with-text.top-banner .image-with-text__text p {
+  font-family: 'EightiesComeback SmBdSmCn';
+  font-size: 30px;
+  font-weight: 600;
+  color: #27649C;
+  line-height: 35px;    
+}
+
+.image-with-text.top-banner .image-with-text__content {
+  position: relative;
+  padding-right: 90px;
+}
+
+.image-with-text.top-banner .image-with-text__content .image-with-text__text+.button {
+  font-family: 'Reader Pro';
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #F2A2A3;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 14px 50px;
+  box-sizing: border-box;
+  border: 2px solid #F2A2A3;
+}
+
+.image-with-text.top-banner .image-with-text__content .image-with-text__text+.button:hover {
+  color: #F2A2A3;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.image-with-text.top-banner .benefit-icons-wrapper {
+  position: absolute;
+  background: #F2A2A3;    
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 70px;
+}
+
+.image-with-text.top-banner .benefit-icons-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-with-text.top-banner .benefit-icons-wrapper ul img {
+  width:  50px;
+  height: auto;
+}
+
+.rich-text.what-is-cbd h2 {
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: capitalize;
+}
+
+.rich-text.what-is-cbd .rich-text__text p {
+  font-family: 'Reader Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #27649C;
+}
+
+.rich-text.what-is-cbd .rich-text__text p a {
+  color: #F2A2A3;
+  text-decoration: none;
+}
+
+.rich-text.what-is-cbd a.button {
+  font-family: 'Reader Pro';
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #F2A2A3;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  border: 2px solid #F2A2A3;
+}
+
+.rich-text.what-is-cbd a.button:hover {
+  color: #F2A2A3;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.image-with-text.find-balance:not(.color-scheme-background-1) {
+  margin-bottom: -5rem;
+}
+
+.image-with-text.find-balance .image-with-text__media img {
+  max-width: 300px;
+  height: auto;
+  border-top-right-radius: 45%;
+  border-top-left-radius: 45%;
+  right: 5rem;
+  left: unset;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-with-text.find-balance .image-with-text__content .image-with-text__heading {
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: capitalize;
+}
+
+.image-with-text.find-balance .image-with-text__content .image-with-text__text p {
+  font-family: 'Reader Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  
+  color: #27649C;
+}
+
+.image-with-text.find-balance .image-with-text__content .image-with-text__text + .button {
+  font-family: 'Reader Pro';
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #D4BAE0;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  border: 2px solid #D4BAE0;
+}
+
+.image-with-text.find-balance .image-with-text__content .image-with-text__text + .button:hover {
+  color: #D4BAE0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.image-with-text.get-peace-mind .image-with-text__grid {
+  padding-bottom: 4rem;
+}
+
+.image-with-text.get-peace-mind .image-with-text__media img {
+  max-width: 300px;
+  height: auto;
+  top: 50%;
+  left: 4rem;
+  transform: translateY(-50%);
+}
+
+.image-with-text.get-peace-mind .image-with-text__content {
+  text-align: right;
+}
+
+.image-with-text.get-peace-mind .image-with-text__content .image-with-text__heading {
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: capitalize;
+}
+
+.image-with-text.get-peace-mind .image-with-text__content .image-with-text__text p {
+  font-family: 'Reader Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  
+  color: #27649C;
+}
+
+.image-with-text.get-peace-mind .image-with-text__content .image-with-text__text + .button {
+  font-family: 'Reader Pro';
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #F7C67B;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  border: 2px solid #F7C67B;
+}
+
+.image-with-text.get-peace-mind .image-with-text__content .image-with-text__text + .button:hover {
+  color: #F7C67B;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.image-with-text.get-peace-mind .image-with-text__content .image-with-text__heading,
+.image-with-text.get-peace-mind .image-with-text__content .image-with-text__text + .button,
+.image-with-text.get-peace-mind .image-with-text__content .button + .image-with-text__text {
+  margin-left: auto;
+}
+
+.image-with-text.home-contact-us {
+  margin-top: -5rem;
+  margin-bottom: 0;
+}
+
+.image-with-text.home-contact-us .image-with-text__html {
+  font-family: 'Reader Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #27649C;
+}
+
+.image-with-text.home-contact-us .image-with-text__content .image-with-text__html + .button {
+  font-family: 'Reader Pro';
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #C0DAE5;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 14px 50px;
+  box-sizing: border-box;
+  border: 2px solid #C0DAE5;
+}
+
+.image-with-text.home-contact-us .image-with-text__content .image-with-text__html + .button:hover {
+  color: #C0DAE5;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.multicolumn.service-benefits {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #D4BAE0;
+}
+
+.multicolumn.service-benefits .title-wrapper-with-link {
+  display: none;
+}
+
+.multicolumn.service-benefits.no-heading:not(.background-secondary) {
+  margin: 0 0 5rem;
+}
+
+.multicolumn.service-benefits .multicolumn-card .multicolumn-card__image-wrapper {
+  height: 64px;
+  width: 64px;
+}
+
+.multicolumn.service-benefits .multicolumn-card__image-wrapper + .multicolumn-card__info {
+  padding-top: 0.5rem;
+}
+
+.multicolumn.service-benefits .multicolumn-card__image-wrapper + .multicolumn-card__info .rte {    
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  color: #fff;
+  line-height: 36px;
+}
+
+.image-with-text.our-story.find-balance:not(.color-scheme-background-1) {
+  margin-bottom: 5rem;
+}
+
+.image-with-text.our-story .image-with-text__content .image-with-text__text+.button {
+  background: #F2A2A3;
+  padding: 14px 50px;
+  box-sizing: border-box;
+  border: 2px solid #F2A2A3;
+}
+
+.image-with-text.our-story .image-with-text__content .image-with-text__text+.button:hover {
+  color: #F2A2A3;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+#instagrid-feed-container h3#igr-title {
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 45px;    
+  color: #27649C;
+  text-transform: capitalize;
+
+  margin: auto;
+  max-width: 700px;
+  margin-bottom: 60px;
+
+  position: relative;
+}
+
+#instagrid-feed-container h3#igr-title::after {
+  content: '@cbdformomsco';
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'EightiesComeback SmBdSmCn';
+  font-size: 24px;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+@media screen and (min-width: 990px) {
+  .image-with-text.find-balance .image-with-text__media img {
+    right: 7rem;
+  }
+
+  .image-with-text.get-peace-mind .image-with-text__media img {
+      left: 7rem;
+  }
+  .image-with-text.get-peace-mind .image-with-text__grid {
+      padding-bottom: 8rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .image-with-text.find-balance .image-with-text__grid {
+      padding-top: 4rem;
+  }
+}
+
+/* --- mobile --- */
+@media screen and (max-width: 749px) {
+  .image-with-text.top-banner .image-with-text__content {
+    padding-top: 110px;
+    padding-right: 40px;
+  }
+
+  .image-with-text.top-banner .image-with-text__heading {
+      font-size: 40px;
+      line-height: 40px;
+  }
+
+  .image-with-text.top-banner .image-with-text__text p {
+      font-size: 22px;
+      line-height: 26px;
+  }
+
+  .image-with-text.top-banner .benefit-icons-wrapper {
+      height: 70px;
+      width: 100%;
+  }
+
+  .image-with-text.top-banner .benefit-icons-wrapper ul {
+      flex-direction: row;
+      gap: 2rem;
+      margin: 0;
+  }
+
+  .image-with-text.top-banner .benefit-icons-wrapper ul li,
+  .image-with-text.top-banner .benefit-icons-wrapper ul img {
+      height:  50px;
+      width:  auto;
+  }
+
+  .image-with-text.find-balance .image-with-text__media {
+      padding-top: 4rem;
+      height: auto;
+  }
+
+  .image-with-text.find-balance .image-with-text__media img {
+      margin: auto;
+      position: relative;
+      right: unset;
+      transform: unset;
+  }
+
+  .image-with-text.find-balance .image-with-text__content .image-with-text__heading {
+      text-align: center;
+  }
+
+  .image-with-text.find-balance .image-with-text__content .image-with-text__text + .button {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .image-with-text.get-peace-mind .image-with-text__grid {
+      padding-bottom: 0;
+  }
+
+  .image-with-text.get-peace-mind .image-with-text__content {
+      text-align: left;
+  }
+
+  .image-with-text.get-peace-mind .image-with-text__content .image-with-text__heading {
+      margin: auto;
+      text-align: center;
+  }
+
+  .image-with-text.get-peace-mind .image-with-text__content .image-with-text__text + .button,
+  .image-with-text.get-peace-mind .image-with-text__content .button + .image-with-text__text {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .image-with-text.get-peace-mind .image-with-text__media {
+      height: auto;
+  }
+
+  .image-with-text.get-peace-mind .image-with-text__media img {
+      margin: auto;
+      position: relative;
+      left: unset;
+      transform: unset;
+  }
+
+  .image-with-text.home-contact-us .image-with-text__heading {
+      margin: auto;
+  }
+
+  .image-with-text.home-contact-us .image-with-text__content .image-with-text__html + .button {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #instagrid-feed-container h3#igr-title {
+      font-size: 32px;
+      line-height: 36px;
+  }
+}

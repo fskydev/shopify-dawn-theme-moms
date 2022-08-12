@@ -112,6 +112,10 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'base-custom.css' | asset_url | stylesheet_tag }}
+
+    {%- if request.page_type == 'index' -%}
+      {{ 'template-homepage.css' | asset_url | stylesheet_tag }}
+    {%- endif -%}
     
     {%- if request.page_type == 'page' -%}
     {{ 'page-our-story.css' | asset_url | stylesheet_tag }}
