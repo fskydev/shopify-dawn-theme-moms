@@ -1,0 +1,161 @@
+.announcement-bar__message {
+  background-color: #D4BAE0;
+}
+
+.page-title {
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: #27649C;
+  text-align: center;  
+}
+
+.page-title span {
+  display: block;
+}
+
+/* --- sections --- */
+.image-with-text.made-for-moms {
+  margin-top: -5rem;
+}
+
+.image-with-text.made-for-moms .image-with-text__media img {
+  right: 5rem;
+  left: unset;
+}
+
+.rich-text.science-first-text:not(.color-background-1) {
+  padding-top: 160px;
+}
+
+.rich-text.science-first-text .rich-text__blocks {
+  position: relative;
+}
+
+.rich-text.science-first-text .rich-text__blocks::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 68px;
+  height: 68px;
+  background:url({{ 'icon__cannabis.png' | asset_url }});
+  background-size: cover;
+}
+
+.multicolumn.science-first-images,
+.multicolumn.science-first-images.no-heading:not(.background-secondary) {
+  margin-top: 0;
+  background-color: #FBF1ED;
+}
+
+.multicolumn.science-first-images .title-wrapper-with-link {
+  display: none;
+}
+
+.multicolumn.science-first-images .multicolumn-list {
+  margin-top: 0;
+}
+
+.multicolumn.science-first-images .rounded-top-full::after {
+  border-color: #FBF1ED;
+  border-bottom-color: transparent;
+}
+
+.multicolumn.meet-advisors .title-wrapper-with-link {
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+}
+
+.multicolumn.meet-advisors .multicolumn-list {
+  justify-content: center;
+}
+
+.multicolumn.meet-advisors .description {
+  text-align: center;
+}
+
+.image-with-text.reproductive-rights .rounded-top-full::after {
+  border-color: #FBF1ED;
+  border-bottom-color: transparent;
+}
+
+.image-with-text.for-all-moms .image-with-text__media {
+  justify-content: end;
+}
+
+@media screen and (min-width: 990px) {
+  .image-with-text.made-for-moms .image-with-text__media img {
+    right: 7rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .multicolumn.science-first-images {
+    padding-bottom: 60px;
+  }
+
+  .rich-text.science-first-text:not(.color-background-1) {
+    padding-top: 200px;
+  }
+
+  .multicolumn.science-first-images .multicolumn-list {
+    gap: 30px;
+  }
+
+  .multicolumn.science-first-images .multicolumn-list__item {
+    padding: 0;
+  }
+
+  .multicolumn.science-first-images .multicolumn-list__item:first-child .multicolumn-card__image-wrapper:not(.multicolumn-card__image-wrapper--full-width) {
+    margin-right: unset;
+    margin-left: auto;
+  }
+
+  .multicolumn.science-first-images .multicolumn-list__item:nth-child(2) .multicolumn-card__image-wrapper:not(.multicolumn-card__image-wrapper--full-width) {
+    margin-right: auto;
+    margin-left: unset;
+  }
+
+  .multicolumn.meet-advisors:not(.background-secondary) {
+    margin-top: 12rem;
+  }
+
+  .multicolumn.meet-advisors .multicolumn-list__item {
+    max-width: 360px;
+  }
+
+  .multicolumn.meet-advisors .multicolumn-list__item .multicolumn-card__image-wrapper {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+
+  .image-with-text.reproductive-rights {
+    margin-bottom: 0 !important;
+  }
+
+  .image-with-text.reproductive-rights .image-with-text__content {
+    align-items: end;
+    text-align: right;    
+  }
+
+  .image-with-text.reproductive-rights .image-with-text__content .image-with-text__heading {
+    max-width: 400px;
+  }
+
+  .image-with-text.for-all-moms {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .image-with-text.for-all-moms .image-with-text__media {
+    padding-top: 0;
+  }
+}
+

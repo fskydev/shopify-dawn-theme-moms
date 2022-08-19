@@ -333,7 +333,7 @@
           "type": "button",
           "settings": {
             "button_label": "Our story",
-            "button_link": "shopify:\/\/pages\/our-story"
+            "button_link": "shopify:\/\/pages\/story"
           }
         }
       },

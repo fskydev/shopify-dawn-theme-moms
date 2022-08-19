@@ -1,4 +1,4 @@
-/* --- global --- */
+/* global */
 @font-face {
     font-family: 'EightiesComeback BlkSmCn';
     src: url("EightiesComeback-BlkSmCn.otf" ) format("opentype");
@@ -37,9 +37,129 @@
     padding-right: 28rem;
 }
 
+.rounded-top-full {
+    overflow: hidden;
+}
 
+.rounded-top-full::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    padding-top: 100%;
+    
+    top: -80rem;
+    left: -80rem;
+    
+    border-width: 80rem;
+    border-color: #fff;
+    border-style: solid;
+    box-sizing: content-box;
+    
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-color: transparent;
+}
+
+/* --- sections --- */
 .image-with-text__content {
     max-width: 700px;
+}
+
+.image-with-text .image-with-text__heading {
+    font-family: 'EightiesComeback ExtBdCond';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 45px;
+    color: #27649C;
+}
+
+.image-with-text .image-with-text__text {
+    font-family: 'Reader Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #27649C;
+}
+
+.image-with-text .image-with-text__media.media:not(.image-with-text__media--large) img {
+    max-width: 300px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image-with-text .media > .rounded-top-full {
+    display: inline-block;
+    position: relative;
+    top: unset;
+    left: unset;
+    height: unset;
+    width: unset;
+}
+
+.image-with-text .image-with-text__media.media:not(.image-with-text__media--large) .rounded-top-full > img {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    top: unset;
+    transform: unset;
+}  
+
+.rich-text h2 {
+    font-family: 'EightiesComeback ExtBdCond';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 45px;
+    text-transform: capitalize;
+    color: #27649C;
+}
+
+.rich-text .rich-text__text {
+    font-family: 'Reader Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #27649C;
+}
+
+.multicolumn .title {
+    font-family: 'EightiesComeback ExtBdCond';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 45px;
+    color: #27649C;
+}
+
+.multicolumn .description {
+    font-family: 'Reader Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;    
+    color: #27649C;
+}
+
+.multicolumn .multicolumn-card h3 {
+    font-family: 'EightiesComeback ExtBdCond';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;    
+    color: #27649C;
+}
+
+.multicolumn .multicolumn-card .rte {
+    font-family: 'Reader Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #27649C;
 }
 
 /* --- header --- */
@@ -347,6 +467,14 @@ sticky-header.header-wrapper {
     }
 }
 
+@media screen and (min-width: 750px) {
+    .image-with-text .image-with-text__media:not(.image-with-text__media--large) {
+        height: auto;
+        display: flex;
+        padding: 7rem;
+    }
+}
+
 /* --- mobile --- */
 @media screen and (max-width: 749px) {
     #Details-menu-drawer-container.menu-opening .header__icon.header__icon--menu {
@@ -368,6 +496,24 @@ sticky-header.header-wrapper {
     .shopify-section-header-sticky #Details-menu-drawer-container.menu-opening #menu-drawer {
         top: 0px; 
         height: 100vh;
+    }
+
+    /* sections */
+    .image-with-text .image-with-text__media:not(.image-with-text__media--large) {
+        padding-top: 4rem;
+        height: auto;
+    }
+
+    .image-with-text .image-with-text__media.media:not(.image-with-text__media--large) img {
+        margin: auto;
+        position: relative;
+        right: unset;
+        transform: unset;
+    }
+
+    .image-with-text .media > .rounded-top-full {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     /* footer */

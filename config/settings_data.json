@@ -16,6 +16,7 @@
     "social_facebook_link": "https:\/\/facebook.com\/shopify",
     "social_pinterest_link": "",
     "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "currency_code_enabled": false,
     "gradient_background_4": "#d4bae0",
     "sections": {
       "announcement-bar": {

@@ -17,7 +17,7 @@
   <a href="{{ article.url }}" class="article-content motion-reduce">
     {%- if show_image == true and article.image -%}
       <div class="article-card__image-wrapper">
-        <div class="article-card__image media {% if image_height %}article-card__image--{{ image_height }}{% else %}media--landscape{% endif %}" {% if section.settings.image_height == 'adapt' %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}>
+        <div class="article-card__image media rounded-top-full {% if image_height %}article-card__image--{{ image_height }}{% else %}media--landscape{% endif %}" {% if section.settings.image_height == 'adapt' %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}>
           <img
             srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
               {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
@@ -44,13 +44,14 @@
           {{ article.title | escape }}
         </h2>
         {%- if show_date -%}
-          <span class="circle-divider caption-with-letter-spacing">
+          <span>
             {{- article.published_at | time_tag: format: 'date' -}}
           </span>
         {%- endif -%}
         {%- if show_author -%}
           <span class="caption-with-letter-spacing">{{ article.author -}}</span>
         {%- endif -%}
+        <span>Read more</span>
       </header>
       {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
         <p class="article-card__excerpt rte-width">

@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'page-faq.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width page-width--narrow">
+  <div class="faq-content">
+    {%- for block in section.blocks -%}
+      <div class="faq-question">
+        <input id="q{{forloop.index}}" type="checkbox" class="panel">
+        <div class="plus">{% render 'icon-chevron-down' %}</div>
+        <label for="q{{forloop.index}}" class="panel-title">{{ block.settings.title }}</label>
+        <div class="panel-content">{{ block.settings.content }}</div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "spaced-section",
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "templates": ["page", "blog"],
+  "presets": [
+    {
+      "name": "FAQ"
+    }
+  ]
+}
+{% endschema %}

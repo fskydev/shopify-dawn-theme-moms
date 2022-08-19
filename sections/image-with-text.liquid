@@ -14,6 +14,7 @@
           {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
         >
           {%- if section.settings.image != blank -%}
+          {% if section.settings.custom_class contains "rounded-top-full-wrapper" %}<div class="rounded-top-full">{% endif %}
             <img
               srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
                 {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
@@ -29,6 +30,7 @@
               width="{{ section.settings.image.width }}"
               height="{{ section.settings.image.height }}"
             >
+          {% if section.settings.custom_class contains "rounded-top-full-wrapper" %}</div>{% endif %}
           {%- else -%}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}

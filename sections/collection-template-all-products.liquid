@@ -1,4 +1,5 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection-all-products.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -40,7 +41,7 @@
           {% endif %}">
           {%- for product in collection.products -%}
             <li class="grid__item">
-              {% render 'product-card',
+              {% render 'product-card-all-products',
                 product_card_product: product,
                 media_size: section.settings.image_ratio,
                 show_secondary_image: section.settings.show_secondary_image,

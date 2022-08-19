@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="{{ 'component-pagination-blog.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-pagination-blog.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- if paginate.parts.size > 0 -%}
+  <div class="pagination-wrapper">
+    <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
+      <ul class="pagination__list list-unstyled" role="list">
+        <li>
+          <a href="{{ paginate.previous.url }}{{ anchor }}" 
+            class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce {% unless paginate.previous %} inactive {% endunless %}" 
+            aria-label="{{ 'general.pagination.previous' | t }}">
+            {% render 'icon-arrow' %}
+          </a>
+        </li>
+        <li>
+          <a href="{{ paginate.next.url }}{{ anchor }}" 
+            class="pagination__item pagination__item--next pagination__item-arrow link motion-reduce {% unless paginate.next %} inactive {% endunless %}" 
+            aria-label="{{ 'general.pagination.next' | t }}" >
+            {%- render 'icon-arrow' -%}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+{%- endif -%}

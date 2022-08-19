@@ -116,10 +116,6 @@
     {%- if request.page_type == 'index' -%}
       {{ 'template-homepage.css' | asset_url | stylesheet_tag }}
     {%- endif -%}
-    
-    {%- if request.page_type == 'page' -%}
-    {{ 'page-our-story.css' | asset_url | stylesheet_tag }}
-    {%- endif -%}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -182,7 +178,7 @@
     {%- endif -%}
 
     {%- if request.page_type == 'index' -%}
-      {{ 'custom-homepage.js' | asset_url | script_tag }}
+      <!-- {{ 'custom-homepage.js' | asset_url | script_tag }} -->
     {%- endif -%}
     {%- if request.page_type == 'product' -%}
       {{ 'custom-product.js' | asset_url | script_tag }}

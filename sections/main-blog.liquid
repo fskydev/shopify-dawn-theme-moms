@@ -2,9 +2,7 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
-
-{%- paginate blog.articles by 6 -%}
-
+{%- paginate blog.articles by 4 -%}
   <div class="main-blog page-width">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
 
@@ -17,7 +15,7 @@
     </div>
 
     {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
+      {%- render 'pagination-blog', paginate: paginate -%}
     {%- endif -%}
   </div>
 {%- endpaginate -%}

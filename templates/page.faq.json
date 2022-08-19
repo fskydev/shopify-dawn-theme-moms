@@ -1,26 +1,16 @@
 {
   "sections": {
-    "main": {
-      "type": "main-blog",
-      "settings": {
-        "layout": "grid",
-        "show_image": true,
-        "image_height": "adapt",
-        "show_date": true,
-        "show_author": false
-      }
-    },
-    "1660874876ff809640": {
+    "1660770502d8e764bc": {
       "type": "rich-text",
       "blocks": {
-        "1660874876565682de-0": {
+        "1660770502c4266678-0": {
           "type": "heading",
           "settings": {
             "heading": "FAQ",
             "heading_size": "h1"
           }
         },
-        "1660874876565682de-1": {
+        "1660770502c4266678-1": {
           "type": "text",
           "settings": {
             "text": "<p>If you have any questions or want to learn more about us, check out the FAQ below or write to us directly at hello@cbdformoms.co<\/p>"
@@ -28,8 +18,8 @@
         }
       },
       "block_order": [
-        "1660874876565682de-0",
-        "1660874876565682de-1"
+        "1660770502c4266678-0",
+        "1660770502c4266678-1"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -37,59 +27,59 @@
         "custom_class": ""
       }
     },
-    "1660858956ab591cb2": {
+    "main": {
       "type": "faq-page",
       "blocks": {
-        "05adfccb-a7b0-474d-a8b7-42891e9c7e1f": {
+        "095179ed-ffff-4e67-8622-4fe7426b727b": {
           "type": "faq",
           "settings": {
             "title": "How much does shipping cost?",
             "content": "<p>$5<\/p>"
           }
         },
-        "ac2094a4-49f1-426c-90f3-6dc00c17c769": {
+        "9bb2a4d0-0113-495c-b48c-a6d7d824fa16": {
           "type": "faq",
           "settings": {
             "title": "How long will my order take to ship?",
             "content": "<p>It will take around 2~3 days.<\/p>"
           }
         },
-        "f8f31989-0754-4330-8616-fad858656dab": {
+        "94c75633-a622-4a45-80ef-554657f2311b": {
           "type": "faq",
           "settings": {
             "title": "I'm pregnant\/I have a medical condition, are your products safe for me to use?",
             "content": "<p>Our goodies are generally good for everyone, however, if you are pregnant or have specific needs or medical concerns, we would advise consulting with your medical professional or herbalist first.<\/p>"
           }
         },
-        "f73a8434-c5c0-42a4-b1cf-aa9395173b51": {
+        "40e7671f-6be3-42fb-869b-de08ffde3858": {
           "type": "faq",
           "settings": {
             "title": "What is CBD?",
             "content": "<p>CBD is an abbreviation of “cannabidiol”, which is one of 113 known active cannabinoids found in the cannabis plant (which is not the same as marijuana). It is a non-psychoactive substance, which means that it doesn’t get you “high” or change your mental state.<\/p><p><\/p><p>The human body runs on an internal system called the endocannabinoid receptor system (ECS), which works to keep everything functioning well and in balance. The ECS and its cannabinoid receptor sites actively regulate organ systems and other bodily functions so that you, your body, and your mind can perform at their most optimal level. Your body already produces cannabinoids that act on your ECS to manage homeostasis.<\/p>"
           }
         },
-        "f8f66cca-5250-425a-8c5b-cfcf2f599588": {
+        "6473256a-c0d5-477e-ad85-35fc66da8cc2": {
           "type": "faq",
           "settings": {
             "title": "How does CBD work?",
             "content": "<p>This is a tough question to answer, because full spectrum CBD products are incredibly complicated, and interact with your body in many complex ways. To put it simply: CBD works on your ECS to keep it in check and in balance. <\/p><p>Some researchers posit that instead of working on ECS receptors directly, CBD encourages your body to produce more of its own cannabinoids. Other studies suggest that CBD targets specific receptors and molecules to produce specific effects that, in turn, create balance in the body. Follow this link to learn more about CBD's effects on the body.<\/p>"
           }
         },
-        "10d1d3d6-092e-4256-82a1-bd3b5d2fe3ed": {
+        "5fa333fe-8f95-4a13-a38e-19a4c93656eb": {
           "type": "faq",
           "settings": {
             "title": "How is CBD made?",
             "content": "<p>Mother Nature has done her part by creating a plant chock full of goodness. Now it becomes our job at Vida Drops to extract that goodness into oils, capsules, gummies, and lotions so that you can benefit most effectively. <\/p><p><\/p><p>CBD is located in the glandular hairs of Sativa plants and must first be dissolved in some solvent and then extracted from that solvent in a useful form. There are three primary extraction methods:<\/p><p>- oil extraction<\/p><p>- solvent extraction<\/p><p>- carbon dioxide (CO2) extraction<\/p><p><\/p><p>Oil extraction involves placing raw chopped up Sativa in an oil bath and heating it so that the CBD is extracted from the plant, using a chemical reaction called decarboxylation. This method is inexact and results in the lowest potency and lowest purity.<\/p><p><\/p><p>Solvent extraction uses volatile chemical solvents like ethanol and butane to extract the CBD and terpenes. The solvent is then evaporated out. While the end result can be highly potent, there is also a high risk for contamination and impurity. (Toxic chemicals, ya know.)<\/p><p><\/p><p>The third method is the best, most efficient, and cleanest one available on the planet--so naturally, it’s the one we use. CO2 extraction is performed when liquid carbon dioxide is pressed through the plant matter to extract the CBD and terpenes. (Yes, carbon dioxide can be made available in liquid form!)<br\/><br\/>Once the CO2 has done its job, it simply evaporates back into a harmless gas--just like an exhale. It leaves no chemical residue behind, making it the purest form of CBD extraction available. (It’s also by far the most expensive extraction method, which is why many producers only out for a cash-grab don’t use it.)<\/p>"
           }
         },
-        "1ea0d072-c6f6-4c40-a76a-329e594e0d53": {
+        "69506d07-83e4-45fc-b731-86870f3c6f60": {
           "type": "faq",
           "settings": {
             "title": "What is the difference between “full spectrum” CBD products and “CBD isolate” products?",
             "content": "<p>Think of CBD like a groovy guitar player. She sounds great all on her own, right? But when she’s backed by a BAND...now we’re <em>really <\/em>rocking.<\/p><p><\/p><p>In this case, the “band” is all the other chemical compounds naturally found within the hemp plant. Arguably the most important ones are terpenes: oils found in every plant on earth. Terpenes interact with the endocannabinoid system in a similar way to cannabinoids. They act as an assistant, working to infiltrate the blood-brain barrier and increase cell permeability, allowing faster absorption of cannabinoids. Terpenes can also influence neurotransmitters in the brain.<br\/><br\/>Some CBD products have no terpenes; ours have five. If you want to dive deeper into the science behind Vida Drops products, click here for our independent lab test results.<\/p><p><\/p><p>Full spectrum CBD products contain the whole band. CBD isolate products contain only the lead guitarist. Definitely still works, but not quite as rad. Make sense?<\/p>"
           }
         },
-        "a980c35e-ba3c-4b6d-9e14-e21acdbc8866": {
+        "efc41bfb-2a89-479c-b426-10d1e0e3df55": {
           "type": "faq",
           "settings": {
             "title": "What conditions can CBD help with?",
@@ -98,22 +88,21 @@
         }
       },
       "block_order": [
-        "05adfccb-a7b0-474d-a8b7-42891e9c7e1f",
-        "ac2094a4-49f1-426c-90f3-6dc00c17c769",
-        "f8f31989-0754-4330-8616-fad858656dab",
-        "f73a8434-c5c0-42a4-b1cf-aa9395173b51",
-        "f8f66cca-5250-425a-8c5b-cfcf2f599588",
-        "10d1d3d6-092e-4256-82a1-bd3b5d2fe3ed",
-        "1ea0d072-c6f6-4c40-a76a-329e594e0d53",
-        "a980c35e-ba3c-4b6d-9e14-e21acdbc8866"
+        "095179ed-ffff-4e67-8622-4fe7426b727b",
+        "9bb2a4d0-0113-495c-b48c-a6d7d824fa16",
+        "94c75633-a622-4a45-80ef-554657f2311b",
+        "40e7671f-6be3-42fb-869b-de08ffde3858",
+        "6473256a-c0d5-477e-ad85-35fc66da8cc2",
+        "5fa333fe-8f95-4a13-a38e-19a4c93656eb",
+        "69506d07-83e4-45fc-b731-86870f3c6f60",
+        "efc41bfb-2a89-479c-b426-10d1e0e3df55"
       ],
       "settings": {
       }
     }
   },
   "order": [
-    "main",
-    "1660874876ff809640",
-    "1660858956ab591cb2"
+    "1660770502d8e764bc",
+    "main"
   ]
 }

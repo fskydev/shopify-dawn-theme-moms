@@ -1,0 +1,71 @@
+.collection-grid-section {
+  margin-top: 10rem;
+  margin-bottom: 16rem !important;
+}
+
+.product-grid .grid__item {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card-wrapper {
+  margin-bottom: 3.5rem;
+}
+
+.card-wrapper .card-information + .card {
+  margin-bottom: 3rem;
+}
+
+.card-information__text.h5 {
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #27649C;
+}
+
+.collection-cart-btn .button {
+  margin-top: 17px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background: #F2A2A3;
+  border-radius: 10px;
+  box-shadow: none;
+
+  font-family: 'Reader Bold Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #F2A2A3;
+}
+
+.collection-cart-btn .button:hover {
+  color: #F2A2A3;
+  background: #fff;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.collection-cart-btn .button .price-item {
+  font-size: 18px;
+  color: #fff;
+}
+
+.collection-cart-btn .button:hover .price-item {
+  color: #F2A2A3;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 749px) {
+  .product-grid .grid__item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "sections": {
+    "main": {
+      "type": "story-page",
+      "settings": {
+      }
+    },
+    "1660531038786d6dc4": {
+      "type": "image-with-text",
+      "blocks": {
+        "16605310382a00f1a9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When, as a new mom, I was going through a divorce in the middle of the pandemic, I was looking for an unmedicated way to help me manage anxiety. I learnt about CBD, but, in my search for an effective hemp oil, found questionable products that I couldn’t get behind. So I decided to build my own, and <strong>make it the best and safest one yet.<\/strong><br\/><br\/>Remember: you don’t have to do this alone. You just found your new support system.<br\/><br\/><strong>Sonya Trachsel<\/strong><br\/><strong>Mom and Founder<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16605310382a00f1a9-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img__page__01.png",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "full_width": true,
+        "custom_class": "made-for-moms"
+      }
+    },
+    "166053212050618084": {
+      "type": "rich-text",
+      "blocks": {
+        "16605321205621b1fa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Science-first thinking.",
+            "heading_size": "h1"
+          }
+        },
+        "16605321205621b1fa-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Backed by top researchers in the CBD field, we make sure that every process goes through rigurous testing. From the quality of the hemp, to all the herbs used in a tincture, every step of the process receives<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16605321205621b1fa-0",
+        "16605321205621b1fa-1"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true,
+        "custom_class": "science-first-text"
+      }
+    },
+    "1660532228f75ae49a": {
+      "type": "multicolumn",
+      "blocks": {
+        "1660532228fe9346fd-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img__page__02.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1660532228fe9346fd-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img__page__03.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660532228fe9346fd-0",
+        "1660532228fe9346fd-1"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "custom_class": "science-first-images rounded-top-full-wrapper"
+      }
+    },
+    "166053336744e4cd47": {
+      "type": "multicolumn",
+      "blocks": {
+        "1660533367b7cc9446-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img__page__rectangle.png",
+            "title": "Rachel Knox, MD, M.B.A.",
+            "text": "<p>Endocannabinologist & Certified Cannabinoid Medicine Specialist at Doctors Knox, Inc.; Chair Oregon Cannabis Commission<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1660533367b7cc9446-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img__page__rectangle.png",
+            "title": "Rachel Knox, MD, M.B.A.",
+            "text": "<p>Endocannabinologist & Certified Cannabinoid Medicine Specialist at Doctors Knox, Inc.; Chair Oregon Cannabis Commission<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1660533367b7cc9446-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img__page__rectangle.png",
+            "title": "Rachel Knox, MD, M.B.A.",
+            "text": "<p>Endocannabinologist & Certified Cannabinoid Medicine Specialist at Doctors Knox, Inc.; Chair Oregon Cannabis Commission<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660533367b7cc9446-0",
+        "1660533367b7cc9446-1",
+        "1660533367b7cc9446-2"
+      ],
+      "settings": {
+        "title": "Meet Our Advisors.",
+        "description": "<p>Backed by top experts who share our mission<\/p>",
+        "image_width": "full",
+        "image_ratio": "square",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "custom_class": "meet-advisors"
+      }
+    },
+    "1660533771ca2180ef": {
+      "type": "image-with-text",
+      "blocks": {
+        "1660533770d0cf88de-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Believing In Reproductive Rights."
+          }
+        },
+        "1660533770d0cf88de-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are committed to donating 5% of revenue between two organizations: <strong>Every Mother Counts, and Planned Parenthood Action Fund.<\/strong> We believe women deserve to become a mom only when they are ready, and do so safely.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660533770d0cf88de-0",
+        "1660533770d0cf88de-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img__page__04.png",
+        "height": "small",
+        "color_scheme": "background-2",
+        "layout": "text_first",
+        "full_width": true,
+        "custom_class": "reproductive-rights rounded-top-full-wrapper"
+      }
+    },
+    "16605339711da383bc": {
+      "type": "image-with-text",
+      "blocks": {
+        "1660533971453eb3a3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "For All Moms."
+          }
+        },
+        "1660533971453eb3a3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Single moms, partnered moms, <br\/>stay-at-home moms, opt-outside moms, working moms, party moms, active moms, binge-watching moms, step moms, plant moms, dog moms, grandmoms. <br\/><br\/>All moms.<\/p>"
+          }
+        },
+        "1660533971453eb3a3-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660533971453eb3a3-0",
+        "1660533971453eb3a3-1",
+        "1660533971453eb3a3-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img__page__05.png",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "full_width": true,
+        "custom_class": "for-all-moms rounded-top-full-wrapper"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660531038786d6dc4",
+    "166053212050618084",
+    "1660532228f75ae49a",
+    "166053336744e4cd47",
+    "1660533771ca2180ef",
+    "16605339711da383bc"
+  ]
+}

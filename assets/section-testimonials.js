@@ -4,7 +4,7 @@ const slider = document.querySelector(".testimonials-container .slider")
 let photos = document.querySelectorAll(".testimonials-container .gallery .photos .photo")
 // Box count
 const boxsCnt = document.querySelector(".testimonials-container").dataset.reviewsCnt;
-console.log(" -------- boxsCnt => ", boxsCnt)
+// console.log(" -------- boxsCnt => ", boxsCnt)
 // Transform index value
 let sliderIndex = 0
 // interval (Duration)
@@ -67,7 +67,11 @@ let start = setInterval(() => slide("increase"), interval)
 // Next  and  Previous button function (SVG icon with different classes)
 document.querySelectorAll("svg").forEach(cur => {
     // Assign function based on the class Name("next" and "prev")
-    cur.addEventListener("click", () => cur.parentNode.classList.contains("next-wrapper") ? slide("increase") : slide("decrease"))
+    // cur.addEventListener("click", () => cur.parentNode.classList.contains("next-wrapper") ? slide("increase") : slide("decrease"))
+    cur.addEventListener("click", () => {
+        if(cur.parentNode.classList.contains("next-wrapper")) slide("increase")
+        else if(cur.parentNode.classList.contains("prev-wrapper")) slide("decrease")
+    })
 })
 
 // Mobile touch Slide Section

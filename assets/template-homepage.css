@@ -356,7 +356,7 @@
 
 @media screen and (min-width: 750px) {
   .image-with-text.find-balance .image-with-text__grid {
-      padding-top: 4rem;
+      /* padding-top: 4rem; */
   }
 }
 

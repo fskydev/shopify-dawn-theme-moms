@@ -2,6 +2,11 @@
   margin: 0 0 5rem 0;
 }
 
+.article-card__image-wrapper .article-card__image.rounded-top-full::after {
+  border-color: #FBF1ED;
+  border-bottom-color: transparent;
+}
+
 @media screen and (min-width: 750px) {
   .articles-wrapper.grid {
     margin-bottom: 7rem;
@@ -24,7 +29,7 @@
 }
 
 .article-card {
-  background-color: rgba(var(--color-foreground), 0.04);
+  /* background-color: rgba(var(--color-foreground), 0.04); */
   align-self: flex-start;
   flex: 0 1 100%;
   display: flex;
@@ -37,7 +42,7 @@
 }
 
 .article-card__info {
-  padding: 3rem;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -53,7 +58,7 @@
 }
 
 .article-content:hover .article-card__title {
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 0.3rem;
 }
 
@@ -74,6 +79,13 @@
 }
 
 .article-card__title {
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  color: #27649C;
+
   text-decoration: none;
   word-break: break-word;
 }
@@ -109,7 +121,24 @@
 
 .article-card__header h2 + span {
   display: inline-block;
-  margin-top: 0.4rem;
+  font-family: 'Reader Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #27649C;
+}
+
+.article-card__header span:last-child {
+  display: block;
+  margin-top: 1.2rem;
+  font-family: 'Reader Bold Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration-line: underline;
+  color: #27649C;
 }
 
 .article-card__footer {

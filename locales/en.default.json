@@ -395,5 +395,13 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "shop_policies": {
+        "refund_policy": "Return Policy",
+        "terms_of_service": "Terms and Conditions"
+      }
+    }
   }
 }

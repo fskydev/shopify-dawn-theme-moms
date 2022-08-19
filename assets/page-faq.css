@@ -1,0 +1,93 @@
+.rich-text h2 {
+  font-size: 44px;
+  line-height: 50px;
+}
+
+.rich-text .rich-text__text {
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 5px 0;
+}
+
+.panel-title {
+  font-family: 'Reader Bold Pro';
+  font-size: 18px;
+  line-height: 28px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 4px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+  color: #27649C;
+}
+
+.panel-content {
+  font-family: 'Reader Pro';
+  font-size: 18px;
+  padding: 4px 10px 0 48px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  /* padding-left: 48px; */
+}
+
+.plus {
+  position: absolute;
+  margin-left: 18px;
+  margin-top: -10px;
+  z-index: 2;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+
+  width: 17px;
+  height: auto;
+}
+
+.panel:checked ~ .plus svg {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.plus path {
+  fill: #27649C;
+}
+
+.panel {
+  display: none !important;
+}
+
+@media screen and (min-width: 750px) {
+  .faq-content {
+    margin-bottom: 240px;
+  }
+}
