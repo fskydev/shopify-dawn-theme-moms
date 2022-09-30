@@ -10,7 +10,7 @@
   line-height: 50px;
   text-transform: capitalize;
   color: #27649C;
-  text-align: center;  
+  text-align: center;
 }
 
 .page-title span {
@@ -20,11 +20,13 @@
 /* --- sections --- */
 .image-with-text.made-for-moms {
   margin-top: -5rem;
+  margin-bottom: 2rem;
 }
 
 .image-with-text.made-for-moms .image-with-text__media img {
   right: 5rem;
   left: unset;
+  max-width: 350px !important;
 }
 
 .rich-text.science-first-text:not(.color-background-1) {
@@ -96,6 +98,10 @@
 }
 
 @media screen and (min-width: 750px) {
+  .image-with-text.made-for-moms .image-with-text__media:not(.image-with-text__media--large) {
+    min-height: 500px;
+  }
+
   .multicolumn.science-first-images {
     padding-bottom: 60px;
   }
@@ -123,7 +129,8 @@
   }
 
   .multicolumn.meet-advisors:not(.background-secondary) {
-    margin-top: 12rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
   }
 
   .multicolumn.meet-advisors .multicolumn-list__item {
@@ -139,6 +146,11 @@
     margin-bottom: 0 !important;
   }
 
+  .image-with-text.reproductive-rights > .image-with-text__grid {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .image-with-text.reproductive-rights .image-with-text__content {
     align-items: end;
     text-align: right;    
@@ -150,6 +162,7 @@
 
   .image-with-text.for-all-moms {
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 

@@ -1,6 +1,6 @@
 {% comment %}theme-check-disable TemplateLength{% endcomment %}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
-{{ 'section-custom-product.css' | asset_url | stylesheet_tag }}
+{{ 'section-cbd-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
@@ -98,7 +98,7 @@
             </p>
           {%- when 'title' -%}
             <h1 class="product__title" {{ block.shopify_attributes }}>
-              {{ product.title | escape }} Tincture
+              {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -130,8 +130,8 @@
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
             <div class="product__accordion accordion" {{ block.shopify_attributes }}>
-              <details id="Details-{{ block.id }}-{{ section.id }}">
-                <summary>
+              <details id="Details-{{ block.id }}-{{ section.id }}" {%- if block.settings.expanded == true -%}open{%- endif -%}>
+                <summary {% if block.settings.expanded == true %}aria-expanded="true"{% endif %}>
                   <div class="summary__title">
                     {% render 'icon-accordion', icon: block.settings.icon %}
                     <h2 class="h4 accordion__title">
@@ -143,6 +143,9 @@
                 <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                   {{ block.settings.content }}
                   {{ block.settings.page.content }}
+                  {%- if block.settings.image != blank -%}
+                  <img src="{{ block.settings.image | img_url: '360x' }}" />
+                  {%- endif -%}
                 </div>
               </details>
             </div>
@@ -170,6 +173,7 @@
 
 
           {%- when 'buy_buttons' -%}
+                {{ 'button-switch.css' | asset_url | stylesheet_tag }}
                 <div {{ block.shopify_attributes }}>
                 <product-form class="product-form">
                     <div class="product-form__error-message-wrapper" role="alert" hidden>
@@ -183,17 +187,22 @@
                     </div>
 
                     {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                    {% render 'button-switch' %}
+                    <div data-handle="{{ product.handle }}" class="sealsubs-target-element"></div>
                     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                     <div class="product-form__buttons">
                         <button
                         type="submit"
                         name="add"
-                        class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                        class="product-form__submit button {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                         {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                         >
+                            {%- if product.selected_or_first_available_variant.available -%}
+                              {% render 'price', product: product, price_class: '' %}
+                            {%- endif -%}
                             <span>
                             {%- if product.selected_or_first_available_variant.available -%}
-                                {{ 'products.product.add_to_cart' | t }} - {{ money_price }}
+                                {{ 'products.product.add_to_cart' | t }}
                             {%- else -%}
                                 {{ 'products.product.sold_out' | t }}
                             {%- endif -%}
@@ -232,7 +241,8 @@
                     </template>
                 </pickup-availability>
                 </div>
-
+              
+            {{ 'button-switch.js' | asset_url | script_tag }}
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
 
 
@@ -797,6 +807,17 @@
           ],
           "default": "check_mark",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.collage.blocks.image.settings.image.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "expanded",
+          "default": false,
+          "label": "Expand tab"
         }
       ]
     },

@@ -12,14 +12,14 @@
         "163720049755c3d76e-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Premium CBD oil,  delivered to your door.<\/p>"
+            "text": "<p>Premium CBD oil, <\/p><p>delivered to your door.<\/p>"
           }
         },
         "163720049755c3d76e-2": {
           "type": "button",
           "settings": {
             "button_label": "Get calm",
-            "button_link": "#"
+            "button_link": "shopify:\/\/products\/no-stress-tincture"
           }
         },
         "7fdb63ed-b2dc-40fc-bd56-9abb84642f56": {
@@ -105,8 +105,8 @@
         "1659619648f6183208-2": {
           "type": "button",
           "settings": {
-            "button_label": "Find your balance",
-            "button_link": "#"
+            "button_label": "Get calm, find your balance",
+            "button_link": "shopify:\/\/products\/no-stress-tincture"
           }
         }
       },
@@ -267,7 +267,7 @@
         "165971943267739409-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icon__home__tested.png",
+            "image": "shopify:\/\/shop_images\/icon__home__tested_png.png",
             "title": "",
             "text": "<p>3-rd party<\/p><p>lab tested<\/p>",
             "link_label": "",
@@ -277,7 +277,7 @@
         "165971943267739409-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icon__home__shipping.png",
+            "image": "shopify:\/\/shop_images\/icon__home__shipping_png.png",
             "title": "",
             "text": "<p>Shipped To<\/p><p>Your Door<\/p>",
             "link_label": "",

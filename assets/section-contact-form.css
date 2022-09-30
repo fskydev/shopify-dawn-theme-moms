@@ -1,9 +1,41 @@
+.page-title.h0 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contact .title {
+  font-family: 'Reader Pro';
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin: 4rem auto;
+}
+
+@media screen and (min-width: 750px) {
+  .contact {
+    margin-top: -7rem;
+  }
+
+  .contact .title {
+    max-width: 378px;
+  }
+}
+
 .contact img {
   max-width: 100%;
 }
 
 .contact .form__message {
   align-items: flex-start;
+}
+
+.contact div.form-status-list > svg {
+  visibility: hidden;
+}
+
+.contact ul.form-status-list li a {
+  color: #27649C;
 }
 
 .contact .icon-success {
@@ -14,6 +46,10 @@
   margin-bottom: 1.5rem;
 }
 
+.contact .field .field__input {
+  border-radius: 10px;
+}
+
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
@@ -21,13 +57,26 @@
 }
 
 .contact__button {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
-@media screen and (min-width: 750px) {
-  .contact__button {
-    margin-top: 4rem;
-  }
+.contact__button .button {
+  font-size: 18px;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #27649C;
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 14px 80px;
+  box-sizing: border-box;
+  border: 2px solid #27649C;
+}
+
+.contact__button .button:hover {
+  color: #27649C;
+  background: #fff;
+  transition: all 0.3s ease;
+  box-shadow: none;
 }
 
 @media screen and (min-width: 750px) {

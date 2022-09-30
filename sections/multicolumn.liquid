@@ -4,6 +4,10 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="multicolumn {% if section.settings.custom_class %}{{ section.settings.custom_class }}{% endif %} background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+  {% if section.settings.custom_class == "club-benefits" %}
+    <div class="curved-line-1"></div>
+    <div class="curved-line-2"></div>
+  {% endif %}
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">

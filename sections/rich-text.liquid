@@ -11,6 +11,10 @@
     <div class="bg-ellipse-2"></div>
     <div class="bg-ellipse-3"></div>
     {% endif %}
+    {% if section.settings.custom_class == "safe-effective-section" %}
+    <div class="curved-line-5"></div>
+    <div class="curved-line-6"></div>
+    {% endif %}
     <div class="rich-text__blocks">
       {%- for block in section.blocks -%}
         {%- case block.type -%}

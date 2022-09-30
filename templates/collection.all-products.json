@@ -12,6 +12,7 @@
       "type": "collection-template-all-products",
       "settings": {
         "products_per_page": 8,
+        "heading": "What every mom needs",
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,

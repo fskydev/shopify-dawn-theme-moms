@@ -4,11 +4,12 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
+{{ 'button-switch.css' | asset_url | stylesheet_tag }}
 
 <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-
+{{ 'button-switch.js' | asset_url | script_tag }}
 {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
   {{ 'component-facets.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
@@ -33,7 +34,9 @@
     {%- else -%}
       <div class="collection page-width">
         <div class="loading-overlay gradient"></div>
-
+        {%- if section.settings.heading -%}
+          <h2>{{ section.settings.heading | escape }}</h2>
+        {%- endif -%}
         <ul id="product-grid" data-id="{{ section.id }}" class="
           grid grid--2-col negative-margin product-grid
           {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
@@ -79,6 +82,11 @@
     {
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header__3.content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:sections.main-collection-product-grid.settings.heading.label"
     },
     {
       "type": "select",

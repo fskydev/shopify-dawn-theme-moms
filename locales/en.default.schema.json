@@ -1167,6 +1167,9 @@
     "main-collection-product-grid": {
       "name": "Product grid",
       "settings": {
+        "heading": {
+          "label": "Heading"
+        },
         "products_per_page": {
           "label": "Products per page"
         },

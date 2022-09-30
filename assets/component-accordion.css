@@ -42,8 +42,13 @@
   width: calc(var(--font-heading-scale) * 1.6rem);
 }
 
+.accordion summary .icon-caret {
+  top: calc(50% - 0.3rem);;
+}
+
 .accordion details[open] > summary .icon-caret {
   transform: rotate(180deg);
+  top: calc(50% - 0.4rem);
 }
 
 .accordion__content {

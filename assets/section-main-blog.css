@@ -29,13 +29,9 @@
 }
 
 @media screen and (min-width: 750px) {
-  .main-blog {
-    margin-bottom: 10rem;
-  }
-
   .main-blog .title--primary {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .blog-articles {

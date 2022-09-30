@@ -14,7 +14,26 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
+
+{%- if request.page_type == 'page' or request.page_type == 'blog' or request.page_type == 'policy' -%}
+  <div class="pre-footer">
+    <div class="curved-line-3"></div>
+    <div class="curved-line-4"></div>
+    <div class="page-width">
+      {%- if section.settings.prefooter_heading != blank -%}
+        <h2>{{ section.settings.prefooter_heading | escape }}</h2>
+      {%- endif -%}
+      {%- if section.settings.prefooter_button_label != blank -%}
+        <a{% if section.settings.prefooter_button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.prefooter_button_link }}"{% endif %} class="button">
+          {{ section.settings.prefooter_button_label | escape }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}
+
 <footer class="footer color-{{ section.settings.color_scheme }}">
+  
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -117,7 +136,7 @@
           <li class="list-social__item">
             <a href="mailto:hello@cbdformoms.co" class="link list-social__link" target="_blank" rel="noopener noreferrer">
               <img src="{{ 'icon__email.png' | asset_url }}" />
-              <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+              <span class="visually-hidden"></span>
             </a>
           </li>
           {%- if settings.social_twitter_link != blank -%}
@@ -451,7 +470,7 @@
       ]
     }
   ],
-  "settings": [
+  "settings": [    
     {
       "type": "select",
       "id": "color_scheme",
@@ -487,6 +506,25 @@
       ],
       "default": "background-1",
       "label": "t:sections.footer.settings.color_scheme.label"
+    },
+    {
+      "type": "header",
+      "content": "Pre Footer"
+    },
+    {
+      "type": "text",
+      "id": "prefooter_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "prefooter_button_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "prefooter_button_link",
+      "label": "Button link"
     },
     {
       "type": "header",

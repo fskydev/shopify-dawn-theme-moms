@@ -1,10 +1,10 @@
 .image-with-text.top-banner {
-  margin-top: -100px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 .image-with-text.top-banner .image-with-text__heading {
-  font-family: 'EightiesComeback ExtBdCond';
+  font-family: 'EightiesComeback BlkSmCn';
   font-style: normal;
   font-size: 60px;
   line-height: 65px;
@@ -25,7 +25,7 @@
 }
 
 .image-with-text.top-banner .image-with-text__content .image-with-text__text+.button {
-  font-family: 'Reader Pro';
+  font-family: 'Reader Bold Pro';
   font-weight: 700;
   font-size: 18px;
   color: #FFF;
@@ -50,7 +50,7 @@
   top: 0;
   right: 0;
   height: 100%;
-  width: 70px;
+  width: 76px;
 }
 
 .image-with-text.top-banner .benefit-icons-wrapper ul {
@@ -67,7 +67,7 @@
 }
 
 .image-with-text.top-banner .benefit-icons-wrapper ul img {
-  width:  50px;
+  width:  60px;
   height: auto;
 }
 
@@ -322,11 +322,10 @@
   color: #27649C;
   text-transform: capitalize;
 
+  position: relative;
   margin: auto;
   max-width: 700px;
-  margin-bottom: 60px;
-
-  position: relative;
+  margin-bottom: 80px;
 }
 
 #instagrid-feed-container h3#igr-title::after {
@@ -349,6 +348,7 @@
   .image-with-text.get-peace-mind .image-with-text__media img {
       left: 7rem;
   }
+
   .image-with-text.get-peace-mind .image-with-text__grid {
       padding-bottom: 8rem;
   }
@@ -356,7 +356,8 @@
 
 @media screen and (min-width: 750px) {
   .image-with-text.find-balance .image-with-text__grid {
-      /* padding-top: 4rem; */
+      padding-top: 2rem;
+      padding-bottom: 2rem;
   }
 }
 
@@ -378,7 +379,7 @@
   }
 
   .image-with-text.top-banner .benefit-icons-wrapper {
-      height: 70px;
+      height: 76px;
       width: 100%;
   }
 
@@ -390,7 +391,7 @@
 
   .image-with-text.top-banner .benefit-icons-wrapper ul li,
   .image-with-text.top-banner .benefit-icons-wrapper ul img {
-      height:  50px;
+      height:  60px;
       width:  auto;
   }
 

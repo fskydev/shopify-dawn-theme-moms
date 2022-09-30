@@ -482,7 +482,7 @@
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
           <!-- {% render 'icon-account' %} -->
-          <img src="{{ 'icon__user.png' | asset_url }}" />
+          <img src="{{ 'icon__user.png' | asset_url }}" width="34" height="34"/>
           <span class="hidden">
             {%- liquid
               if customer
@@ -496,7 +496,7 @@
       {%- endif -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        <span><img src="{{ 'icon__shopping_cart.png' | asset_url }}" /><span class="hidden">{{ 'templates.cart.cart' | t }}</span>{%- if cart != empty -%}(<span class="cart-count">{{ cart.item_count }}</span>){%- endif -%}</span>
+        <span><img src="{{ 'icon__shopping_cart.png' | asset_url }}" width="34" height="34"/><span class="hidden">{{ 'templates.cart.cart' | t }}</span>{%- if cart != empty -%}(<span class="cart-count">{{ cart.item_count }}</span>){%- endif -%}</span>
       </a>
     </div>
   </header>

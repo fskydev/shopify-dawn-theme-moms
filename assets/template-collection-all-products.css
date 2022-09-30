@@ -1,11 +1,27 @@
 .collection-grid-section {
-  margin-top: 10rem;
-  margin-bottom: 16rem !important;
+  margin-top: 8rem;
+}
+
+.collection-grid-section #ProductGridContainer .collection h2 {
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.collection-grid-section #product-grid {
+  max-width: 1148px;
+  margin: 0 auto;
 }
 
 .product-grid .grid__item {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .card-wrapper {
@@ -30,7 +46,7 @@
   margin-top: 17px;
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   background: #F2A2A3;
   border-radius: 10px;
@@ -44,6 +60,7 @@
   color: #fff;
   text-transform: uppercase;
   border: 2px solid #F2A2A3;
+  padding: 1rem;
 }
 
 .collection-cart-btn .button:hover {
@@ -63,9 +80,73 @@
   transition: all 0.3s ease;
 }
 
+.collection-cart-btn .button > span {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1280px) {
+  .product-grid .grid__item {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+  .collection-cart-btn .button {
+    padding: 1rem;
+  }
+  
+  .collection-cart-btn .button span {
+    font-size: 14px;
+    line-height: 18px;   
+  }
+  
+  .collection-cart-btn .button .price-item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .collection-grid-section {
+    margin-bottom: 16rem !important;
+  }
+}  
+
 @media screen and (max-width: 749px) {
   .product-grid .grid__item {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .collection-cart-btn .button {
+    padding: 1rem;
+  }
+
+  .collection-cart-btn .button span {
+    font-size: 16px;
+    line-height: 18px;   
+  }
+  
+  .collection-cart-btn .button .price-item {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .collection-grid-section {
+    margin-top: 5rem;
+  }
+
+  .product-grid {
+    flex-flow: column wrap;
+  }
+
+  .product-grid .grid__item {
+    padding-left: 4px;
+    padding-right: 4px;
+    max-width: unset;
+    width: 100%;
   }
 }

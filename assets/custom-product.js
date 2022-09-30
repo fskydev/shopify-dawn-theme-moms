@@ -15,11 +15,11 @@ window.addEventListener("load", function() {
     }
     elProductDetailsText.innerHTML = htmlProductDetailsText;
 
-    this.document.querySelector(".image-with-text.supplements-facts .button").addEventListener("click", function(event){
-        event.preventDefault();
-        let dataPdfUrl = event.target.dataset.pdfUrl;
-        window.open(dataPdfUrl);
-    });
+    // this.document.querySelector(".image-with-text.supplements-facts .button").addEventListener("click", function(event){
+    //     event.preventDefault();
+    //     let dataPdfUrl = event.target.dataset.pdfUrl;
+    //     window.open(dataPdfUrl);
+    // });
 
     let elsCustomRatingCount = document.getElementsByClassName("custom-rating_count");
     if(elsCustomRatingCount.length > 0) {

@@ -27,7 +27,7 @@
             "settings": {
               "text": "GET 25% OFF + FREE SHIPPING",
               "color_scheme": "background-1",
-              "link": ""
+              "link": "shopify:\/\/products\/no-stress-tincture"
             }
           }
         },
@@ -70,7 +70,7 @@
             "type": "text",
             "settings": {
               "heading": "copyright",
-              "subtext": "<p>Copyright © CBD For Moms 2022 <br\/>CBD For Moms, Inc.<br\/>Tigard, OR 97223<br\/>hello@cbdformoms.co<\/p>"
+              "subtext": "<p>Copyright © CBD For Moms 2022 <br\/>CBD For Moms, Inc.<br\/>Tigard, OR 97223<br\/><a href=\"mailto:hello@cbdformoms.co\" target=\"_blank\" title=\"mailto:hello@cbdformoms.co\">hello@cbdformoms.co<\/a><\/p>"
             }
           },
           "eb3104f0-5a79-4d64-b783-b34324827648": {
@@ -89,6 +89,9 @@
         ],
         "settings": {
           "color_scheme": "background-4",
+          "prefooter_heading": "Reclaim Your Right To Feel Good",
+          "prefooter_button_label": "get cbd for moms",
+          "prefooter_button_link": "shopify:\/\/products\/no-stress-tincture",
           "newsletter_enable": true,
           "newsletter_heading": "",
           "show_social": true,
@@ -100,7 +103,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "341186785192672687": {
+        "type": "shopify:\/\/apps\/seal-subscriptions-loyalty\/blocks\/subscription-script-append\/13b25004-a140-4ab7-b5fe-29918f759699",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {

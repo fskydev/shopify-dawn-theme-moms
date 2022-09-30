@@ -142,6 +142,7 @@
 
 <form method="post" action="/cart/add" class="collection-cart-btn">
   <input type="hidden" name="id" value="{{ product_card_product.variants.first.id }}" />
+  {% render 'button-switch' %}
   <button type="submit" class="button" {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
     {%- if product_card_product.selected_or_first_available_variant.available -%}
       {% render 'price', product: product_card_product, price_class: '' %}
@@ -154,4 +155,5 @@
       {%- endif -%}
     </span>
   </button>
+  <div class="sealsubs-target-element" data-handle="{{ product_card_product.handle }}"></div>
 </form>

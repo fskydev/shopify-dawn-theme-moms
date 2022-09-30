@@ -1,0 +1,113 @@
+.sealsubs-target-element {
+  display: none;
+}
+
+.switch-button {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  overflow: hidden;  
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: 50px;
+  border: 1px solid #8BAFCF;
+  
+  font-family: 'Reader Bold Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #27649C;
+  text-align: center;
+
+  box-sizing: content-box;
+  margin-bottom: 1rem;
+
+  display: none;
+}
+
+.switch-button:before {
+  content: "JOIN CLUB + SAVE 25%";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+
+  font-family: 'Reader Pro';
+  font-weight: 400;
+  color: #8BAFCF;
+}
+
+.switch-button:has(> input.switch-button-checkbox:checked)::before {
+  font-family: 'Reader Bold Pro';
+  font-weight: 700;
+  color: #27649C;
+}
+
+input[type='checkbox'].switch-button-checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.switch-button-checkbox + .switch-button-label {
+  position: relative;
+  padding: 15px 0;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+.switch-button-checkbox + .switch-button-label:before {
+  content: "";
+  background: #FBF1ED;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  border: 1px solid #27649C;
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+
+.switch-button-checkbox:checked + .switch-button-label:before {
+  width: 150%;
+  left: unset;
+  right: -150%;
+}
+
+.switch-button-checkbox + .switch-button-label .switch-button-label-span {
+  position: relative;
+
+  font-family: 'Reader Bold Pro';
+  font-weight: 700;
+  color: #27649C;
+}
+
+.switch-button-checkbox:checked + .switch-button-label .switch-button-label-span {
+  font-family: 'Reader Pro';
+  font-weight: 400;
+  color: #8BAFCF;
+}
+
+.price__regular .price-item .original-price {
+  font-family: 'Reader Pro';
+  font-weight: 400;  
+  text-decoration-line: line-through;
+  margin-right: 10px;
+}

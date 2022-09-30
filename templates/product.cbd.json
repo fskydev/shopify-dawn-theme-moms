@@ -1,0 +1,235 @@
+{
+  "sections": {
+    "main": {
+      "type": "cbd-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "d66c7678-468d-4731-b39b-04a890ab7719": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<span class=\"custom-rating_count visually-hidden\">{{product.metafields.reviews.rating_count}} <\/span>"
+          }
+        },
+        "3bc4960d-07c7-4756-960d-73c068c7e6f3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "About",
+            "content": "<p>{{ product.metafields.my_fields.about | metafield_tag }}<\/p>",
+            "page": "",
+            "icon": "none",
+            "expanded": true
+          }
+        },
+        "49db5559-d20e-44c8-ae38-d83e6c2684cf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Supplement facts",
+            "content": "",
+            "page": "",
+            "icon": "none",
+            "image": "{{ product.metafields.my_fields.supplement_facts_image.value }}",
+            "expanded": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "buy_buttons",
+        "d66c7678-468d-4731-b39b-04a890ab7719",
+        "3bc4960d-07c7-4756-960d-73c068c7e6f3",
+        "49db5559-d20e-44c8-ae38-d83e6c2684cf"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "166430842152a7f3ce": {
+      "type": "rich-text",
+      "blocks": {
+        "16643084214e5f67e3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Safe & Effective",
+            "heading_size": "h1"
+          }
+        },
+        "16643084214e5f67e3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We use the proprietory eco-friendly process to remediate the THC rather than remove it. Unlike other brands we don’t use any solvents, and still keep the beneficial compounds. While our extract may not be 100% THC-free, it will always come in at less than 0.1% (below testable quantity). <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16643084214e5f67e3-0",
+        "16643084214e5f67e3-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "custom_class": "safe-effective-section"
+      }
+    },
+    "1637602381b2f75762": {
+      "type": "image-with-text",
+      "blocks": {
+        "1637602381837ff101-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Inside Your Tincture"
+          }
+        },
+        "1637602381837ff101-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.my_fields.details_text | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1637602381837ff101-0",
+        "1637602381837ff101-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.my_fields.details_img.value }}",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "image_first",
+        "full_width": true,
+        "custom_class": "product-details"
+      }
+    },
+    "1661462186317c3d5a": {
+      "type": "image-with-text",
+      "blocks": {
+        "1661462186745e75e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Partnered With A Family-Owned Farm in Oregon."
+          }
+        },
+        "1661462186745e75e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We obsess with ingredients. Our top quality hemp extract comes from an organic family-owned farm in Oregon with less than 0.1 THC, for you to receive the benefits without getting the “high”.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1661462186745e75e1-0",
+        "1661462186745e75e1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img__product__partner.png",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "text_first",
+        "full_width": true,
+        "custom_class": "partnered-with-farm rounded-top-full-wrapper"
+      }
+    },
+    "16614632797f77e452": {
+      "type": "image-with-text",
+      "blocks": {
+        "1661463279a6ed9bfd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Giving you a peace of mind"
+          }
+        },
+        "1661463279a6ed9bfd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transparency is one of our values. Our extraction process uses pressurized CO2 to pull CBD and other phytocannabinoids from the cannabis plant using specially-crafted equipment. The cannabinoids produced are potent and free of chlorophyll and other chemicals.<\/p>"
+          }
+        },
+        "1661463279a6ed9bfd-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "See lab results",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "1661463279a6ed9bfd-0",
+        "1661463279a6ed9bfd-1",
+        "1661463279a6ed9bfd-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img__product__transparency.png",
+        "height": "small",
+        "color_scheme": "background-2",
+        "layout": "image_first",
+        "full_width": true,
+        "custom_class": "transparency-section rounded-top-full-wrapper"
+      }
+    },
+    "1661464441d7f53455": {
+      "type": "multicolumn",
+      "blocks": {
+        "1661464441e8385936-0": {
+          "type": "column",
+          "settings": {
+            "title": "Moms’ No Stress Club",
+            "text": "<p>The No Stress Club is free to join, and we keep things flexible in case you need a break. Membership gives you tinctures every month, and comes with other things we love.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1661464441e8385936-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>– 25% off tinctures<\/p><p>– Free Shipping<\/p><p>– Private Community<\/p><p>– Exclusive Events<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1661464441e8385936-0",
+        "1661464441e8385936-1"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "custom_class": "club-benefits"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166430842152a7f3ce",
+    "1637602381b2f75762",
+    "1661462186317c3d5a",
+    "16614632797f77e452",
+    "1661464441d7f53455"
+  ]
+}

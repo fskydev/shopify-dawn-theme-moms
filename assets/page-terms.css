@@ -1,0 +1,102 @@
+.shopify-policy__container {
+  max-width: 560px;
+  max-width: 65ch;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.terms--newsletter {
+  background-color: #FBF1ED;
+  padding: 6rem 8rem;
+  border-radius: 30px;
+  margin-bottom: 8rem;
+}
+
+.page-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.terms__newsletter .terms__heading {
+  font-family: 'EightiesComeback ExtBdCond';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  color: #27649C;
+  margin: 0;
+}
+
+.terms__newsletter > p {
+  font-family: 'Reader Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;  
+  color: #27649C;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.terms__newsletter .newsletter-form {
+  margin: 0;
+}
+
+.newsletter-form__field-wrapper #NewsletterForm--terms {
+  box-shadow: unset;
+  border: solid 1px #27649C;
+  border-radius: 10px;
+  flex: 8;
+  font-family: 'Reader Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 31px;
+  color: #27649C;
+  padding: 10px 10px;
+}
+
+.newsletter-form__field-wrapper #NewsletterForm--terms::placeholder {
+  opacity: 1;
+  color: #27649C;
+}
+
+.terms__newsletter .newsletter-form__field-wrapper {
+  max-width: unset;
+}
+
+
+.terms__newsletter .newsletter-form__field-wrapper .newsletter-form__button {
+  border: 2px solid #27649C;
+  background-color: #27649C;  
+}
+
+.terms__newsletter .newsletter-form__field-wrapper .newsletter-form__button:hover {
+  color: #27649C;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.terms__newsletter .newsletter-form__field-wrapper .newsletter-form__button span {
+  font-family: 'Reader Pro';
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFF;
+  white-space: nowrap;
+}
+
+.terms__newsletter .newsletter-form__field-wrapper .newsletter-form__button:hover span {
+  color: #27649C;
+}
+
+@media screen and (min-width: 750px) {
+  .terms__newsletter .newsletter-form {
+    max-width: unset;
+  }
+  
+}
