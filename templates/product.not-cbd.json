@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "main": {
+      "type": "not-cbd-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "d66c7678-468d-4731-b39b-04a890ab7719": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<span class=\"custom-rating_count visually-hidden\">{{product.metafields.reviews.rating_count}} <\/span>"
+          }
+        },
+        "3bc4960d-07c7-4756-960d-73c068c7e6f3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "About",
+            "content": "<p>{{ product.metafields.my_fields.about | metafield_tag }}<\/p>",
+            "page": "",
+            "icon": "none",
+            "expanded": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "buy_buttons",
+        "d66c7678-468d-4731-b39b-04a890ab7719",
+        "3bc4960d-07c7-4756-960d-73c068c7e6f3"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
