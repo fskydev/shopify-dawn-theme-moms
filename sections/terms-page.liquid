@@ -17,7 +17,7 @@
         We know how busy you are, so we promise is no spam ever. Just monthly newsletter and private access to offers.
       </p>
       
-      {%- form 'customer', id: 'ContactTerms', class: 'terms__newsletter newsletter-form' -%}
+      {%- form 'customer', id: 'ContactTerms', class: 'terms__newsletter newsletter-form', onsubmit: 'return setEmailData(this)' -%}
         <input type="hidden" name="contact[tags]" value="newsletter">
         <div class="newsletter-form__field-wrapper">
           <div class="field">
@@ -25,7 +25,7 @@
               id="NewsletterForm--terms"
               type="email"
               name="contact[email]"
-              class="field__input"
+              class="field__input contact-email"
               value="{{ form.email }}"
               aria-required="true"
               autocorrect="off"

@@ -91,7 +91,7 @@
             {%- if section.settings.newsletter_heading != blank -%}
               <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
             {%- endif -%}
-            {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+            {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form', onsubmit: 'return setEmailData(this)' -%}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
                 <div class="field">
@@ -99,7 +99,7 @@
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
-                    class="field__input"
+                    class="field__input contact-email"
                     value="{{ form.email }}"
                     aria-required="true"
                     autocorrect="off"
@@ -325,6 +325,21 @@
     </div>
   </div>
 </footer>
+
+<script>
+  const setEmailData = (form) => {
+    let contactEmail = form.querySelector(".contact-email").value;
+    sessionStorage.setItem("contactEmail", contactEmail);
+    return true;
+  }
+
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  let customerPosted = urlParams.get('customer_posted');
+  if(customerPosted == "true") {
+    location.href = "/pages/lets-get-to-know-each-other";
+  }
+</script>
 
 {% javascript %}
   class LocalizationForm extends HTMLElement {
