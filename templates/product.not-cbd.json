@@ -8,6 +8,16 @@
           "settings": {
           }
         },
+        "6e6c7216-20cb-4654-b243-a16e000cd3da": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 15,
+            "text_align": "center",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -19,13 +29,6 @@
             "show_dynamic_checkout": false
           }
         },
-        "d66c7678-468d-4731-b39b-04a890ab7719": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<span class=\"custom-rating_count visually-hidden\">{{product.metafields.reviews.rating_count}} <\/span>"
-          }
-        },
         "3bc4960d-07c7-4756-960d-73c068c7e6f3": {
           "type": "collapsible_tab",
           "settings": {
@@ -35,23 +38,47 @@
             "icon": "none",
             "expanded": true
           }
+        },
+        "d66c7678-468d-4731-b39b-04a890ab7719": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span class=\"custom-rating_count visually-hidden\">{{product.metafields.reviews.rating_count}} <\/span>"
+          }
         }
       },
       "block_order": [
         "title",
+        "6e6c7216-20cb-4654-b243-a16e000cd3da",
         "description",
         "buy_buttons",
-        "d66c7678-468d-4731-b39b-04a890ab7719",
-        "3bc4960d-07c7-4756-960d-73c068c7e6f3"
+        "3bc4960d-07c7-4756-960d-73c068c7e6f3",
+        "d66c7678-468d-4731-b39b-04a890ab7719"
       ],
       "settings": {
         "enable_sticky_info": false,
         "hide_variants": false,
         "enable_video_looping": false
       }
+    },
+    "1666792175ed9422e1": {
+      "type": "apps",
+      "blocks": {
+        "bcaadbcb-f86c-44b7-8170-ac4ae33152b3": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "bcaadbcb-f86c-44b7-8170-ac4ae33152b3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1666792175ed9422e1"
   ]
 }

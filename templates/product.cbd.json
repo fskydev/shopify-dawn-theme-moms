@@ -8,6 +8,16 @@
           "settings": {
           }
         },
+        "1fded5e1-79e7-4a59-8406-6a49c6c20f0a": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 15,
+            "text_align": "center",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -17,13 +27,6 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false
-          }
-        },
-        "d66c7678-468d-4731-b39b-04a890ab7719": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<span class=\"custom-rating_count visually-hidden\">{{product.metafields.reviews.rating_count}} <\/span>"
           }
         },
         "3bc4960d-07c7-4756-960d-73c068c7e6f3": {
@@ -46,15 +49,22 @@
             "image": "{{ product.metafields.my_fields.supplement_facts_image.value }}",
             "expanded": false
           }
+        },
+        "d66c7678-468d-4731-b39b-04a890ab7719": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span class=\"custom-rating_count visually-hidden\">{{product.metafields.reviews.rating_count}} <\/span>"
+          }
         }
       },
       "block_order": [
         "title",
+        "1fded5e1-79e7-4a59-8406-6a49c6c20f0a",
         "description",
         "buy_buttons",
-        "d66c7678-468d-4731-b39b-04a890ab7719",
         "3bc4960d-07c7-4756-960d-73c068c7e6f3",
-        "49db5559-d20e-44c8-ae38-d83e6c2684cf"
+        "49db5559-d20e-44c8-ae38-d83e6c2684cf",
+        "d66c7678-468d-4731-b39b-04a890ab7719"
       ],
       "settings": {
         "enable_sticky_info": false,
@@ -222,6 +232,22 @@
         "swipe_on_mobile": false,
         "custom_class": "club-benefits"
       }
+    },
+    "1666792130f72d71bc": {
+      "type": "apps",
+      "blocks": {
+        "d0aec767-0217-437f-9dbc-90620544716a": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "d0aec767-0217-437f-9dbc-90620544716a"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -230,6 +256,7 @@
     "1637602381b2f75762",
     "1661462186317c3d5a",
     "16614632797f77e452",
-    "1661464441d7f53455"
+    "1661464441d7f53455",
+    "1666792130f72d71bc"
   ]
 }
